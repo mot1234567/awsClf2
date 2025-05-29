@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RouteProp } from '@react-navigation/native';
-import { RootStackParamList } from '../navigation';
+import { RootStackParamList } from '../types';
 
 type ResultScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Result'>;
 type ResultScreenRouteProp = RouteProp<RootStackParamList, 'Result'>;
