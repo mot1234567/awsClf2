@@ -173,7 +173,7 @@ export default function QuizScreen({ navigation, route }: Props) {
       return () => {
         isMounted.current = false;
       };
-    }, [mode, domainFilter, questionId, questionHistory, settings.shuffleOptions])
+    }, [mode, domainFilter, questionId, settings.shuffleOptions])
   );
   
   const loadQuestions = useCallback(() => {
@@ -227,7 +227,7 @@ export default function QuizScreen({ navigation, route }: Props) {
         Alert.alert('エラー', '問題の読み込み中にエラーが発生しました。');
       }
     }
-  }, [mode, domainFilter, questionId, questionHistory, settings.shuffleOptions]);
+  }, [mode, domainFilter, questionId, settings.shuffleOptions]);
 
   useEffect(() => {
     if (questions.length > 0 && currentQuestionIndex < questions.length) {
