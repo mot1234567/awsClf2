@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "Which AWS service is used to store objects and is designed for 99.999999999% (11 9's) of durability?",
+    "options": [
+      "Amazon EC2",
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon S3 (Simple Storage Service) is designed for 99.999999999% (11 9's) of durability and is used for object storage.",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy"
+  },
+  {
+    "id": 2,
+    "question": "Which AWS service provides a virtual server in the cloud?",
+    "options": [
+      "Amazon EC2",
+      "Amazon S3",
+      "Amazon RDS",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon EC2 (Elastic Compute Cloud) provides virtual servers in the AWS cloud.",
+    "domain": "Technology",
+    "difficulty": "easy"
+  },
+  {
+    "id": 3,
+    "question": "Which AWS pricing model allows you to pay for compute capacity by the hour with no long-term commitments?",
+    "options": [
+      "Reserved Instances",
+      "Dedicated Hosts",
+      "On-Demand Instances",
+      "Spot Instances"
+    ],
+    "correctAnswer": 2,
+    "explanation": "On-Demand Instances allow you to pay for compute capacity by the hour with no long-term commitments.",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium"
+  },
+  {
+    "id": 4,
+    "question": "Which AWS service is used to distribute incoming application traffic across multiple targets?",
+    "options": [
+      "Amazon Route 53",
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "Elastic Load Balancing"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as EC2 instances, containers, and IP addresses.",
+    "domain": "Technology",
+    "difficulty": "medium"
+  },
+  {
+    "id": 5,
+    "question": "Which AWS service provides a fully managed NoSQL database?",
+    "options": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon Redshift",
+      "Amazon Aurora"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.",
+    "domain": "Technology",
+    "difficulty": "medium"
+  }
+]
