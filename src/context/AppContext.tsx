@@ -12,9 +12,7 @@ import {
 
 const DEFAULT_SETTINGS: AppSettings = {
   showExplanationImmediately: true,
-  shuffleOptions: true,
-  darkMode: false,
-  fontSize: 'medium'
+  shuffleOptions: true
 };
 
 const DEFAULT_USER_PROGRESS: UserProgress = {
