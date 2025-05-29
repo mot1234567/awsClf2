@@ -1,41 +1,55 @@
 import React from 'react';
 import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
+import { Question } from '../types';
 
 type QuestionCardProps = {
-  question: string;
-  options: string[];
+  question: Question;
   selectedOption: number | null;
-  correctAnswer: number;
   showExplanation: boolean;
-  explanation: string;
+  isBookmarked: boolean;
   onSelectOption: (index: number) => void;
+  onToggleBookmark: () => void;
 };
 
 export default function QuestionCard({
   question,
-  options,
   selectedOption,
-  correctAnswer,
   showExplanation,
-  explanation,
+  isBookmarked,
   onSelectOption,
+  onToggleBookmark,
 }: QuestionCardProps) {
   return (
     <View style={styles.container}>
-      <Text style={styles.questionText}>{question}</Text>
+      <Text style={styles.domainTag}>{question.domain}</Text>
+      <View style={styles.bookmarkContainer}>
+        <TouchableOpacity
+          style={styles.bookmarkButton}
+          onPress={onToggleBookmark}
+          testID="bookmark-button"
+        >
+          <Ionicons 
+            name={isBookmarked ? 'bookmark' : 'bookmark-outline'} 
+            size={24} 
+            color={isBookmarked ? '#0066cc' : '#666'} 
+          />
+        </TouchableOpacity>
+      </View>
+      <Text style={styles.questionText}>{question.question}</Text>
       
       <View style={styles.optionsContainer}>
-        {options.map((option, index) => (
+        {question.options.map((option, index) => (
           <TouchableOpacity
             key={index}
             style={[
               styles.optionButton,
               selectedOption === index && 
-                (index === correctAnswer 
+                (index === question.correctAnswer 
                   ? styles.correctOption 
                   : styles.incorrectOption),
               selectedOption !== null && 
-                index === correctAnswer && 
+                index === question.correctAnswer && 
                 styles.correctOption
             ]}
             onPress={() => onSelectOption(index)}
@@ -49,7 +63,7 @@ export default function QuestionCard({
       {showExplanation && (
         <View style={styles.explanationContainer}>
           <Text style={styles.explanationTitle}>解説:</Text>
-          <Text style={styles.explanationText}>{explanation}</Text>
+          <Text style={styles.explanationText}>{question.explanation}</Text>
         </View>
       )}
     </View>
@@ -67,6 +81,24 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 2,
+  },
+  domainTag: {
+    alignSelf: 'flex-start',
+    backgroundColor: '#e9ecef',
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 15,
+    fontSize: 12,
+    color: '#666',
+    marginBottom: 10,
+  },
+  bookmarkContainer: {
+    alignItems: 'flex-end',
+    marginTop: -30,
+    marginBottom: 10,
+  },
+  bookmarkButton: {
+    padding: 5,
   },
   questionText: {
     fontSize: 18,
