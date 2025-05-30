@@ -203,12 +203,15 @@ export default function QuizScreen({ navigation, route }: Props) {
       if (settings.shuffleOptions && mode !== 'single') {
         filteredQuestions = [...filteredQuestions].sort(() => Math.random() - 0.5);
       }
-      
+
       if (mode === 'single' && !questionId) {
-        const randomIndex = Math.floor(Math.random() * filteredQuestions.length);
-        filteredQuestions = [filteredQuestions[randomIndex]];
+        filteredQuestions = [...filteredQuestions]
+          .sort(() => Math.random() - 0.5)
+          .slice(0, Math.min(10, filteredQuestions.length));
       } else if (mode === 'domain') {
-        filteredQuestions = filteredQuestions.slice(0, 5);
+        filteredQuestions = [...filteredQuestions]
+          .sort(() => Math.random() - 0.5)
+          .slice(0, Math.min(10, filteredQuestions.length));
       }
       
       if (isMounted.current) {

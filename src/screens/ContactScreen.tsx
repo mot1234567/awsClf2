@@ -5,12 +5,12 @@ export default function ContactScreen() {
   const [message, setMessage] = useState('');
 
   const handleSend = async () => {
-    const url = `mailto:moto0605_yyy@yahoo.co.jp?subject=${encodeURIComponent('お問い合わせ')}&body=${encodeURIComponent(message)}`;
-    const supported = await Linking.canOpenURL(url);
+    const mailto = `mailto:moto0605_yyy@yahoo.co.jp?subject=${encodeURIComponent('お問い合わせ')}&body=${encodeURIComponent(message)}`;
+    const supported = await Linking.canOpenURL(mailto);
     if (supported) {
-      await Linking.openURL(url);
+      await Linking.openURL(mailto);
     } else {
-      Alert.alert('メールアプリを開けませんでした');
+      Alert.alert('エラー', 'メールアプリを開けませんでした');
     }
   };
 
@@ -20,12 +20,12 @@ export default function ContactScreen() {
       <TextInput
         style={styles.input}
         multiline
-        placeholder="ご質問やご要望を入力してください"
         value={message}
         onChangeText={setMessage}
+        placeholder="お問い合わせ内容を入力してください"
       />
       <TouchableOpacity style={styles.button} onPress={handleSend}>
-        <Text style={styles.buttonText}>送信</Text>
+        <Text style={styles.buttonText}>メールを送信</Text>
       </TouchableOpacity>
     </View>
   );
@@ -34,8 +34,8 @@ export default function ContactScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5',
     padding: 20,
+    backgroundColor: '#f5f5f5',
   },
   label: {
     fontSize: 16,
@@ -43,11 +43,11 @@ const styles = StyleSheet.create({
   },
   input: {
     backgroundColor: 'white',
-    borderWidth: 1,
-    borderColor: '#ddd',
-    borderRadius: 8,
+    height: 150,
     padding: 10,
-    minHeight: 120,
+    borderRadius: 8,
+    borderColor: '#ddd',
+    borderWidth: 1,
     textAlignVertical: 'top',
     marginBottom: 20,
   },

@@ -2,10 +2,12 @@ import React from 'react';
 import { StyleSheet, View, Text, Switch, TouchableOpacity, ScrollView, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
+import { RootStackParamList } from '../types';
 import { useAppContext } from '../context/AppContext';
 import { RootStackParamList } from '../types';
 
 export default function SettingsScreen() {
+  const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
   const {
     settings,
     updateSettings,
