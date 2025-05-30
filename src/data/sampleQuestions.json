@@ -3298,5 +3298,3005 @@
     "domain": "Technology",
     "difficulty": "medium",
     "answer": 1
+  },
+  {
+    "id": 221,
+    "question": "AWS Support Centerでサポートケースを作成する際に必要な情報として適切でないものはどれですか？",
+    "options": [
+      "問題の詳細な説明",
+      "影響を受けているサービス",
+      "お客様のクレジットカード情報",
+      "優先度レベル"
+    ],
+    "correctAnswer": 2,
+    "explanation": "サポートケース作成時にクレジットカード情報は不要です。問題の詳細、影響範囲、優先度が重要な情報です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 222,
+    "question": "AWS Personal Health DashboardとService Health Dashboardの主な違いはどれですか？",
+    "options": [
+      "Personal Health Dashboardはアカウント固有の情報を提供",
+      "Service Health Dashboardは個人向けサービス",
+      "両方とも同じ情報を提供",
+      "Personal Health Dashboardは有料サービス"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Personal Health Dashboardはお客様のアカウントに影響する具体的なサービス問題を表示し、Service Health Dashboardは全体的なAWSサービスの状態を表示します。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 223,
+    "question": "AWS Trusted Advisorの5つのカテゴリーに含まれないものはどれですか？",
+    "options": [
+      "コスト最適化",
+      "セキュリティ",
+      "パフォーマンス",
+      "データ移行"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Trusted Advisorの5つのカテゴリーは、コスト最適化、セキュリティ、パフォーマンス、フォルトトレラント性、サービス制限です。データ移行は含まれません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 224,
+    "question": "AWS OrganizationsのService Control Policies（SCPs）の主な機能はどれですか？",
+    "options": [
+      "請求の統合管理",
+      "アカウント作成の自動化",
+      "アカウントレベルでのアクセス制限",
+      "リソースの自動プロビジョニング"
+    ],
+    "correctAnswer": 2,
+    "explanation": "SCPsは組織内のアカウントが実行できるアクションを制限するガードレール機能を提供します。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 225,
+    "question": "AWS Control Towerが提供する主要な機能はどれですか？",
+    "options": [
+      "コスト管理とレポート",
+      "マルチアカウント環境のセットアップと統制",
+      "データベースの自動最適化",
+      "ネットワークパフォーマンスの監視"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Control Towerは、セキュアでよく設計されたマルチアカウント環境（Landing Zone）をセットアップし、統制を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 226,
+    "question": "クラウド導入フレームワーク（CAF）における「Governance」の観点で重視される要素はどれですか？",
+    "options": [
+      "アプリケーションの開発速度",
+      "リスク管理とコンプライアンス",
+      "技術的なパフォーマンス",
+      "ユーザーエクスペリエンス"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Governance観点では、リスク管理、コンプライアンス、IT投資の価値最大化に焦点を当てます。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 227,
+    "question": "AWS認定の有効期限として正しいものはどれですか？",
+    "options": [
+      "1年",
+      "2年",
+      "3年",
+      "無期限"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS認定資格の有効期限は取得から3年間です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 228,
+    "question": "AWS Marketplaceで購入できるソフトウェアの課金方式として適用されないものはどれですか？",
+    "options": [
+      "時間課金",
+      "年間サブスクリプション",
+      "BYOL（Bring Your Own License）",
+      "物理的な製品配送料金"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Marketplaceはクラウドベースのソフトウェアマーケットプレイスで、物理的な製品配送は行いません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 229,
+    "question": "AWS Partner Network（APN）のパートナータイプとして正しくないものはどれですか？",
+    "options": [
+      "コンサルティングパートナー",
+      "テクノロジーパートナー",
+      "ハードウェアパートナー",
+      "トレーニングパートナー"
+    ],
+    "correctAnswer": 2,
+    "explanation": "APNの主要なパートナータイプはコンサルティングパートナーとテクノロジーパートナーです。ハードウェアパートナーは独立したカテゴリーではありません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 230,
+    "question": "クラウド移行における「6Rs戦略」に含まれないものはどれですか？",
+    "options": [
+      "Rehost（リホスト）",
+      "Refactor（リファクター）",
+      "Redesign（リデザイン）",
+      "Retire（リタイア）"
+    ],
+    "correctAnswer": 2,
+    "explanation": "6Rs戦略は、Rehost、Replatform、Refactor、Repurchase、Retain、Retireです。Redesignは含まれません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 231,
+    "question": "クラウドのビジネス価値を測定するKPIとして適切でないものはどれですか？",
+    "options": [
+      "市場投入時間の短縮",
+      "インフラストラクチャコストの削減",
+      "開発者の生産性向上",
+      "物理サーバーの台数"
+    ],
+    "correctAnswer": 3,
+    "explanation": "物理サーバーの台数はクラウドのビジネス価値を示すKPIではありません。クラウドでは物理インフラから抽象化されます。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 232,
+    "question": "クラウド経済学における「CapExからOpExへの転換」の主な利点はどれですか？",
+    "options": [
+      "固定資産の増加",
+      "キャッシュフローの改善",
+      "物理インフラの所有",
+      "長期契約の義務"
+    ],
+    "correctAnswer": 1,
+    "explanation": "CapEx（設備投資）からOpEx（運用費用）への転換により、初期投資が不要となりキャッシュフローが改善されます。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 233,
+    "question": "AWSグローバルインフラストラクチャの拡張戦略として最も重要な要素はどれですか？",
+    "options": [
+      "コスト削減のみ",
+      "お客様の近接性とデータ主権要件",
+      "競合他社への対抗",
+      "技術者の採用"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWSは顧客により近いサービス提供とデータ主権要件への対応を重視してグローバルインフラを拡張しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 234,
+    "question": "AWS のコンプライアンス認証として実在しないものはどれですか？",
+    "options": [
+      "SOC 1/2/3",
+      "ISO 27001",
+      "PCI DSS",
+      "GDPR-5000"
+    ],
+    "correctAnswer": 3,
+    "explanation": "GDPR-5000は存在しない認証です。AWSはSOC、ISO、PCI DSSなどの実際のコンプライアンス認証を取得しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 235,
+    "question": "AWS利用規定（Acceptable Use Policy）で禁止されている行為として正しくないものはどれですか？",
+    "options": [
+      "スパムメールの送信",
+      "不正アクセスの試行",
+      "高負荷なアプリケーションの実行",
+      "知的財産権の侵害"
+    ],
+    "correctAnswer": 2,
+    "explanation": "高負荷なアプリケーションの実行は適切なリソース使用であれば禁止されていません。スパム、不正アクセス、知的財産権侵害は禁止行為です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 236,
+    "question": "クラウドガバナンスのベストプラクティスとして適切でないものはどれですか？",
+    "options": [
+      "明確な責任分担の定義",
+      "継続的なモニタリング",
+      "すべての決定権を一人に集中",
+      "定期的なポリシー見直し"
+    ],
+    "correctAnswer": 2,
+    "explanation": "すべての決定権を一人に集中することはガバナンスのベストプラクティスではありません。分散された責任と権限が重要です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 237,
+    "question": "AWS Support プランの「Technical Account Manager（TAM）」が含まれるプランはどれですか？",
+    "options": [
+      "Basic",
+      "Developer",
+      "Business",
+      "Enterprise"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Technical Account Manager（TAM）はEnterprise Supportプランにのみ含まれる専任のサポート担当者です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 238,
+    "question": "AWS Trusted Advisorの「フォルトトレラント性」カテゴリーでチェックされる項目として適切でないものはどれですか？",
+    "options": [
+      "RDS Multi-AZ設定",
+      "ELBの可用性ゾーン分散",
+      "EC2インスタンスのCPU使用率",
+      "Amazon S3のバージョン管理"
+    ],
+    "correctAnswer": 2,
+    "explanation": "CPU使用率はパフォーマンスカテゴリーの項目です。フォルトトレラント性では冗長性や耐障害性に関する設定をチェックします。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 239,
+    "question": "AWS OrganizationsのConsolidated Billingにおけるリザーブドインスタンス（RI）の利点はどれですか？",
+    "options": [
+      "RIの使用率を組織全体で共有可能",
+      "RIの価格が50%割引される",
+      "すべてのサービスにRIが適用される",
+      "RIの契約期間が短縮される"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Consolidated Billingでは、組織内のアカウント間でRIの使用率を共有し、割引を最大化できます。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 240,
+    "question": "AWS Landing Zoneの主要コンポーネントとして含まれないものはどれですか？",
+    "options": [
+      "アカウント構造",
+      "セキュリティベースライン",
+      "ネットワーク設計",
+      "個別アプリケーションの詳細設計"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Landing Zoneは組織レベルの基盤を提供しますが、個別アプリケーションの詳細設計は含まれません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 241,
+    "question": "クラウド導入の成熟度を測る指標として適切でないものはどれですか？",
+    "options": [
+      "自動化の程度",
+      "セキュリティポスチャ",
+      "従業員の平均年齢",
+      "運用効率性"
+    ],
+    "correctAnswer": 2,
+    "explanation": "従業員の平均年齢はクラウド導入の成熟度を測る指標として適切ではありません。技術的能力と運用プラクティスが重要です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 242,
+    "question": "AWS Well-Architected Tool の主な用途はどれですか？",
+    "options": [
+      "アーキテクチャの自動構築",
+      "既存アーキテクチャの評価と改善",
+      "コストの自動最適化",
+      "セキュリティ脆弱性の修正"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Well-Architected Toolは、既存のアーキテクチャをWell-Architected Framework の原則に基づいて評価し、改善点を特定するツールです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 243,
+    "question": "AWS Professional Services の主な提供内容はどれですか？",
+    "options": [
+      "技術サポートのみ",
+      "クラウド導入とデジタル変革の支援",
+      "ハードウェアの販売",
+      "ソフトウェア開発の代行"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Professional Services は、組織のクラウド導入目標の達成とデジタル変革を支援するコンサルティングサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 244,
+    "question": "クラウドROI（投資利益率）の計算に含まれる要素として適切でないものはどれですか？",
+    "options": [
+      "ハードウェア調達コストの削減",
+      "運用効率の向上による人件費削減",
+      "市場投入時間短縮による収益増",
+      "競合他社の株価変動"
+    ],
+    "correctAnswer": 3,
+    "explanation": "競合他社の株価変動は、自組織のクラウドROI計算には含まれない外部要因です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 245,
+    "question": "AWS Training and Certification の「デジタルトレーニング」の特徴として正しいものはどれですか？",
+    "options": [
+      "有料のみ",
+      "対面式のみ",
+      "オンデマンドで無料コースも提供",
+      "企業向けのみ"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWSデジタルトレーニングには無料のオンデマンドコースが多数含まれており、個人でも受講可能です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 246,
+    "question": "AWS Support の「Infrastructure Event Management」サービスが含まれるプランはどれですか？",
+    "options": [
+      "Basic",
+      "Developer",
+      "Business",
+      "Enterprise"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Infrastructure Event ManagementはEnterprise Supportプランの付加サービスとして提供されます。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 247,
+    "question": "クラウドファーストポリシーの主な目的はどれですか？",
+    "options": [
+      "コストの最小化のみ",
+      "クラウドを優先的な選択肢として検討",
+      "オンプレミスの完全排除", 
+      "セキュリティの強化のみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "クラウドファーストポリシーは、新しいITプロジェクトでクラウドソリューションを最初に検討することを推奨する方針です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 248,
+    "question": "AWS Artifact で提供される文書として正しくないものはどれですか？",
+    "options": [
+      "SOCレポート",
+      "PCI DSS証明書",
+      "コンプライアンス文書",
+      "個別顧客のアクセスログ"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Artifactはコンプライアンス関連文書を提供しますが、個別顧客の具体的なアクセスログは含まれません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 249,
+    "question": "AWS re:Inventの主な目的はどれですか？",
+    "options": [
+      "製品販売のみ",
+      "学習、ネットワーキング、新サービス発表",
+      "採用活動のみ",
+      "株主総会"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS re:Inventは年次カンファレンスで、教育、ネットワーキング機会、新サービスの発表を提供します。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 250,
+    "question": "マルチクラウド戦略の主な利点として適切でないものはどれですか？",
+    "options": [
+      "ベンダーロックインの回避",
+      "リスクの分散",
+      "管理複雑性の削減",
+      "特定クラウドの最適機能活用"
+    ],
+    "correctAnswer": 2,
+    "explanation": "マルチクラウド戦略は管理複雑性を増加させる傾向があります。これは課題の一つであり、利点ではありません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 251,
+    "question": "AWS Cost Optimization Hub の主な機能はどれですか？",
+    "options": [
+      "リアルタイム課金",
+      "コスト削減提案の一元管理",
+      "予算の自動設定",
+      "請求書の自動支払い"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cost Optimization Hubは、複数のAWSサービスからのコスト最適化提案を一箇所で確認・管理できるサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 252,
+    "question": "DevSecOpsにおけるセキュリティの統合ポイントとして適切でないものはどれですか？",
+    "options": [
+      "開発プロセス",
+      "CI/CDパイプライン",
+      "運用監視",
+      "顧客への請求プロセス"
+    ],
+    "correctAnswer": 3,
+    "explanation": "顧客への請求プロセスはDevSecOpsのセキュリティ統合ポイントではありません。開発から運用までの技術プロセスに焦点を当てます。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 253,
+    "question": "AWS の「スケールの経済」による利点として正しいものはどれですか？",
+    "options": [
+      "お客様が個別にインフラを購入する必要",
+      "固定価格でのサービス提供",
+      "大規模な利用により継続的な価格低下",
+      "サービス機能の制限"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWSは大規模な運用により効率性を高め、その利益をお客様への価格低下として還元します。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 254,
+    "question": "クラウドネイティブアプリケーションの特徴として適切でないものはどれですか？",
+    "options": [
+      "マイクロサービスアーキテクチャ",
+      "コンテナベースのデプロイ",
+      "モノリシックなデザイン",
+      "自動スケーリング対応"
+    ],
+    "correctAnswer": 2,
+    "explanation": "モノリシックなデザインはクラウドネイティブの特徴ではありません。分散型でマイクロサービスベースの設計が特徴です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 255,
+    "question": "AWS Enterprise Support の「Concierge Support Team」の主なサービス内容はどれですか？",
+    "options": [
+      "技術的な問題解決",
+      "請求とアカウントの支援",
+      "アプリケーション開発",
+      "ハードウェア修理"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Concierge Support Teamは請求問い合わせやアカウント管理に関する専門的な支援を提供します。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 256,
+    "question": "AWS Trusted Advisor の「サービス制限」カテゴリーでチェックされる内容はどれですか？",
+    "options": [
+      "コストの最適化提案",
+      "セキュリティの脆弱性",
+      "現在の使用量とAWSサービス制限の比較",
+      "パフォーマンスのボトルネック"
+    ],
+    "correctAnswer": 2,
+    "explanation": "サービス制限カテゴリーでは、現在のリソース使用量がAWSのサービス制限に近づいているかをチェックします。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 257,
+    "question": "「Infrastructure as Code（IaC）」の主な利点として適切でないものはどれですか？",
+    "options": [
+      "設定の一貫性確保",
+      "バージョン管理の可能性",
+      "手動設定の必要性増加",
+      "再現可能なデプロイメント"
+    ],
+    "correctAnswer": 2,
+    "explanation": "IaCは手動設定を減らし、自動化を促進することが主な利点です。手動設定の必要性増加は利点ではありません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 258,
+    "question": "AWS Organizations の「組織単位（OU）」の主な用途はどれですか？",
+    "options": [
+      "課金の計算",
+      "アカウントの論理的なグループ化",
+      "ネットワークの分離",
+      "データの暗号化"
+    ],
+    "correctAnswer": 1,
+    "explanation": "組織単位（OU）は、アカウントを論理的にグループ化し、ポリシーの適用や管理を効率化するために使用されます。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 259,
+    "question": "クラウド移行における「Wave」アプローチの特徴はどれですか？",
+    "options": [
+      "すべてのシステムを同時に移行",
+      "段階的にシステムグループを移行",
+      "単一システムのみ移行",
+      "移行を行わない"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Waveアプローチは、関連するシステムをグループ化し、段階的に移行することでリスクを軽減します。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 260,
+    "question": "AWS における「リージョンデータレジデンシー」の概念として正しいものはどれですか？",
+    "options": [
+      "データは自動的に全リージョンに複製される",
+      "お客様が指定したリージョン内にデータが保持される",
+      "データは常に米国内のみに保存される",
+      "データの場所は選択できない"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWSでは、お客様が明示的に設定しない限り、データは選択したリージョン内に留まります。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 261,
+    "question": "「クラウドセンターオブエクセレンス（CCoE）」の主な役割として適切でないものはどれですか？",
+    "options": [
+      "ベストプラクティスの策定",
+      "ガバナンスとコンプライアンス",
+      "個別アプリケーションのコーディング",
+      "トレーニングと知識共有"
+    ],
+    "correctAnswer": 2,
+    "explanation": "CCoEは戦略的なガイダンスを提供する組織であり、個別アプリケーションの具体的なコーディングは行いません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 262,
+    "question": "AWS Marketplace でのソフトウェア調達の利点として適切でないものはどれですか？",
+    "options": [
+      "統合された請求",
+      "事前に検証されたソフトウェア",
+      "物理メディアでの配送",
+      "迅速なデプロイメント"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Marketplaceはクラウドベースのマーケットプレイスで、ソフトウェアは電子的に配信され、物理メディアでの配送は行いません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 263,
+    "question": "AWSのエラスティシティ（弾力性）と可用性の関係として正しいものはどれですか？",
+    "options": [
+      "エラスティシティと可用性は無関係",
+      "エラスティシティは可用性向上に寄与する",
+      "エラスティシティは可用性を低下させる",
+      "両方とも同じ概念"
+    ],
+    "correctAnswer": 1,
+    "explanation": "エラスティシティ（需要に応じた自動スケーリング）は、負荷変動に対応してシステムの可用性向上に寄与します。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 264,
+    "question": "AWS による持続可能性への取り組みとして正しくないものはどれですか？",
+    "options": [
+      "再生可能エネルギーの使用",
+      "データセンター効率の改善",
+      "カーボンニュートラルの達成目標",
+      "物理サーバーの大量生産推進"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWSは効率性と持続可能性を重視しており、物理サーバーの大量生産推進は取り組みではありません。仮想化と効率化を推進しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 265,
+    "question": "クラウド移行における「Strangler Fig パターン」の特徴はどれですか？",
+    "options": [
+      "システム全体を一度に置き換え",
+      "既存システムを段階的に新システムで置き換え",
+      "両システムを永続的に並行運用",
+      "移行を行わずに現状維持"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Strangler Figパターンは、既存システムの機能を段階的に新しいクラウドベースのシステムで置き換える移行手法です。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 266,
+    "question": "AWS Support における「Well-Architected Review」の提供プランはどれですか？",
+    "options": [
+      "Basic",
+      "Developer",
+      "Business以上",
+      "Enterprise のみ"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Well-Architected ReviewはBusiness Support以上のプランで提供されるサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 267,
+    "question": "AWS における「shared fate model」の概念として正しいものはどれですか？",
+    "options": [
+      "AWSとお客様の運命は完全に分離",
+      "お客様の成功がAWSの成功と密接に関連",
+      "AWSのみが成功すれば良い",
+      "お客様のみが責任を負う"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Shared fate modelは、お客様の成功がAWSの成功でもあるという考え方で、パートナーシップを重視します。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 268,
+    "question": "AWS Global Accelerator の主な用途として適切でないものはどれですか？",
+    "options": [
+      "グローバルトラフィックの最適化",
+      "レイテンシーの削減",
+      "可用性の向上",
+      "データベースの暗号化"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Global Acceleratorはネットワークパフォーマンスの最適化サービスで、データベース暗号化は提供しません。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 269,
+    "question": "AWS re:Post の主な特徴はどれですか？",
+    "options": [
+      "有料のプレミアムサポート",
+      "AWSエキスパートによる無料Q&Aコミュニティ",
+      "企業内部専用ツール",
+      "物理イベント予約システム"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS re:PostはAWSコミュニティ専門家による無料のQ&Aプラットフォームです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 270,
+    "question": "企業のクラウド成熟度を評価する「Cloud Maturity Model」で最も高い成熟度レベルの特徴はどれですか？",
+    "options": [
+      "基本的なクラウドサービスの利用",
+      "一部業務のクラウド移行",
+      "クラウドネイティブによる継続的最適化",
+      "クラウド利用の検討段階"
+    ],
+    "correctAnswer": 2,
+    "explanation": "最高レベルの成熟度では、クラウドネイティブアプローチによる継続的なイノベーションと最適化が行われます。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 271,
+    "question": "Amazon Kinesis Data Streamsの主な特徴はどれですか？",
+    "options": [
+      "バッチ処理専用のサービス",
+      "リアルタイムデータストリーミング処理",
+      "静的ファイルの保存",
+      "データベースのバックアップ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Kinesis Data Streamsは、リアルタイムでデータをストリーミング処理し、複数のアプリケーションで並行して消費できるサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 272,
+    "question": "Amazon SageMakerの主な用途はどれですか？",
+    "options": [
+      "Webサイトのホスティング",
+      "機械学習モデルの構築、トレーニング、デプロイ",
+      "データベースの管理",
+      "ネットワークの最適化"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon SageMakerは、機械学習ワークフローの全工程（データ準備、モデル構築、トレーニング、デプロイ）を統合的に支援するフルマネージドサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 273,
+    "question": "AWS Transit Gatewayの主な利点はどれですか？",
+    "options": [
+      "単一のVPCのみをサポート",
+      "複数のVPCとオンプレミスネットワークの中央集約接続",
+      "データベースのレプリケーション",
+      "ファイルの圧縮"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transit Gatewayは、複数のVPCとオンプレミスネットワークを中央のハブを通じて接続し、ネットワーク管理を簡素化します。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 274,
+    "question": "Amazon Athenaでクエリできるデータソースとして正しくないものはどれですか？",
+    "options": [
+      "Amazon S3のデータ",
+      "Amazon Glacierのアーカイブデータ",
+      "リアルタイムストリーミングデータ",
+      "AWS CloudTrailログ"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon Athenaはサーバーレスクエリサービスで、S3の静的データを対象とします。リアルタイムストリーミングデータには適していません。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 275,
+    "question": "Amazon EKS（Elastic Kubernetes Service）の主な特徴はどれですか？",
+    "options": [
+      "Dockerコンテナのみをサポート",
+      "マネージドKubernetesサービス",
+      "サーバーレス関数の実行",
+      "リレーショナルデータベース"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EKSは、Kubernetesコントロールプレーンを管理するマネージドKubernetesサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 276,
+    "question": "AWS CodeCommitの主な機能はどれですか？",
+    "options": [
+      "コードの自動テスト",
+      "プライベートGitリポジトリのホスティング",
+      "アプリケーションのデプロイ",
+      "インフラストラクチャの監視"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS CodeCommitは、セキュアでスケーラブルなプライベートGitリポジトリをホスティングするマネージドソースコントロールサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 277,
+    "question": "Amazon Rekognitionが提供する機能として正しいものはどれですか？",
+    "options": [
+      "音声認識",
+      "画像・動画分析とコンピュータビジョン",
+      "自然言語処理",
+      "時系列データ分析"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Rekognitionは、画像と動画の分析、物体・人物・テキスト検出、顔認識などのコンピュータビジョン機能を提供します。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 278,
+    "question": "AWS Database Migration Service（DMS）が対応していない移行パターンはどれですか？",
+    "options": [
+      "オンプレミスからAWSへの移行",
+      "AWSからオンプレミスへの移行",
+      "AWSサービス間の移行",
+      "データを完全に削除する移行"
+    ],
+    "correctAnswer": 3,
+    "explanation": "DMSはデータベースの移行サービスであり、データの削除や破棄は移行パターンではありません。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 279,
+    "question": "Amazon Kinesis Data Firehoseの主な用途はどれですか？",
+    "options": [
+      "リアルタイムデータ分析",
+      "ストリーミングデータの変換と配信",
+      "データベースのバックアップ",
+      "Webサイトのキャッシング"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kinesis Data Firehoseは、ストリーミングデータをリアルタイムで変換し、S3、Redshift、ElasticSearchなどの配信先に自動配信します。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 280,
+    "question": "Amazon Comprehendが提供する機能として正しくないものはどれですか？",
+    "options": [
+      "感情分析",
+      "エンティティ認識",
+      "画像認識",
+      "言語検出"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon Comprehendは自然言語処理サービスで、テキスト分析に特化しています。画像認識はAmazon Rekognitionが提供します。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 281,
+    "question": "AWS Storage Gatewayのゲートウェイタイプとして存在しないものはどれですか？",
+    "options": [
+      "File Gateway",
+      "Volume Gateway",
+      "Tape Gateway",
+      "Database Gateway"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Storage Gatewayには File Gateway、Volume Gateway、Tape Gateway の3つのタイプがあります。Database Gatewayは存在しません。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 282,
+    "question": "Amazon OpenSearchの主な用途はどれですか？",
+    "options": [
+      "リレーショナルデータベース",
+      "検索・分析・可視化",
+      "ファイル同期",
+      "動画ストリーミング"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon OpenSearchは、ログ分析、全文検索、アプリケーション監視などの検索・分析・可視化ワークロードに使用されます。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 283,
+    "question": "AWS CodeBuildの主な機能はどれですか？",
+    "options": [
+      "ソースコードの管理",
+      "コードのコンパイルとテスト",
+      "アプリケーションのデプロイ",
+      "サーバーの監視"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS CodeBuildは、ソースコードをコンパイルし、テストを実行し、デプロイ可能なソフトウェアパッケージを生成するフルマネージドビルドサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 284,
+    "question": "Amazon Textractが提供する機能はどれですか？",
+    "options": [
+      "音声からテキストへの変換",
+      "文書からのテキストとデータ抽出",
+      "テキストの翻訳",
+      "テキストの音声合成"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Textractは、スキャンした文書からテキスト、手書き文字、データを自動的に抽出する機械学習サービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 285,
+    "question": "Amazon Neptune の主な用途はどれですか？",
+    "options": [
+      "リレーショナルデータベース",
+      "グラフデータベース",
+      "ドキュメントデータベース",
+      "キー値ストア"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Neptuneは、高度に接続されたデータセットを扱うアプリケーション向けの、高速で信頼性の高いグラフデータベースサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 286,
+    "question": "AWS X-Rayの主な機能はどれですか？",
+    "options": [
+      "アプリケーションのトレースと分析",
+      "データベースの最適化",
+      "セキュリティスキャン",
+      "コスト分析"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS X-Rayは、分散アプリケーションのトレースを行い、パフォーマンスのボトルネックや問題を特定・分析するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 287,
+    "question": "Amazon Pollyの主な機能はどれですか？",
+    "options": [
+      "画像認識",
+      "テキストから音声への変換",
+      "音声からテキストへの変換",
+      "言語翻訳"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Pollyは、テキストを自然な音声に変換するテキスト読み上げサービスで、多言語と多数の音声をサポートしています。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 288,
+    "question": "AWS DataSyncの主な用途はどれですか？",
+    "options": [
+      "リアルタイムデータストリーミング",
+      "オンプレミスとAWS間のデータ転送",
+      "データベースの暗号化",
+      "Webサイトの最適化"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS DataSyncは、オンプレミスストレージシステムとAWS S3、EFS、FSx間で大量のデータを安全かつ高速に転送するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 289,
+    "question": "Amazon DocumentDBがサポートするAPIはどれですか？",
+    "options": [
+      "MySQL API",
+      "PostgreSQL API",
+      "MongoDB API",
+      "Oracle API"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon DocumentDBは、MongoDB APIと互換性のあるドキュメントデータベースサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 290,
+    "question": "AWS Glueの主な機能はどれですか？",
+    "options": [
+      "データベースのバックアップ",
+      "ETL（抽出、変換、ロード）サービス",
+      "Webサーバーのホスティング",
+      "メール送信"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Glueは、分析のためのデータの準備とロードを簡単にするフルマネージドETLサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 291,
+    "question": "Amazon EMRで実行できるビッグデータフレームワークとして正しくないものはどれですか？",
+    "options": [
+      "Apache Spark",
+      "Apache Hadoop",
+      "Apache Hive",
+      "Microsoft Excel"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EMRは Apache Spark、Hadoop、Hive などのビッグデータフレームワークをサポートしますが、Microsoft Excel は対象外です。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 292,
+    "question": "Amazon Translateの主な機能はどれですか？",
+    "options": [
+      "画像の翻訳",
+      "自然言語翻訳",
+      "プログラムコードの変換",
+      "データ形式の変換"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Translateは、機械学習を使用して多言語間でテキストを翻訳するニューラル機械翻訳サービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 293,
+    "question": "AWS CodeDeployがサポートするデプロイ戦略として正しくないものはどれですか？",
+    "options": [
+      "In-place deployment",
+      "Blue/green deployment",
+      "Rolling deployment",
+      "Random deployment"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS CodeDeployは In-place、Blue/green、Rolling deployment をサポートしますが、Random deployment は戦略として存在しません。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 294,
+    "question": "Amazon Lexの主な用途はどれですか？",
+    "options": [
+      "画像検索",
+      "音声・テキストのための会話型インターフェース構築",
+      "データベース管理",
+      "ネットワーク監視"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Lexは、音声やテキストを使用した会話型インターフェース（チャットボットなど）をアプリケーションに組み込むサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 295,
+    "question": "Amazon FSx for WindowsとAmazon FSx for Lustreの主な違いはどれですか？",
+    "options": [
+      "WindowsはWindowsアプリケーション向け、LustreはHPCワークロード向け",
+      "どちらも同じ機能を提供",
+      "Windowsはストレージのみ、Lustreは計算も含む",
+      "LustreはWindows専用"
+    ],
+    "correctAnswer": 0,
+    "explanation": "FSx for WindowsはWindowsベースのアプリケーション向けで、FSx for LustreはHPC（高性能コンピューティング）ワークロード向けに最適化されています。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 296,
+    "question": "AWS CodePipelineの主な機能はどれですか？",
+    "options": [
+      "コードの編集",
+      "継続的インテグレーション・継続的デリバリー（CI/CD）",
+      "データベースの管理",
+      "サーバーの監視"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS CodePipelineは、コードの変更から本番環境へのリリースまでのCI/CDワークフローを自動化するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 297,
+    "question": "Amazon Timestreamの主な特徴はどれですか？",
+    "options": [
+      "グラフデータベース",
+      "時系列データベース",
+      "リレーショナルデータベース",
+      "ドキュメントデータベース"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Timestreamは、IoTとオペレーショナルアプリケーション向けの高速でスケーラブルな時系列データベースです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 298,
+    "question": "AWS EventBridgeの主な用途はどれですか？",
+    "options": [
+      "データストレージ",
+      "イベント駆動アーキテクチャのためのイベントバス",
+      "Webサイトホスティング",
+      "バックアップ管理"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS EventBridgeは、アプリケーション同士をイベントデータで接続するサーバーレスイベントバスサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 299,
+    "question": "Amazon MemoryDB for Redisの主な特徴はどれですか？",
+    "options": [
+      "永続性のないキャッシュのみ",
+      "耐久性のあるインメモリデータベース",
+      "リレーショナルデータベース",
+      "ファイルストレージ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon MemoryDB for Redisは、Redis互換の耐久性のあるインメモリデータベースサービスで、マイクロ秒の読み取りレイテンシーを提供します。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 300,
+    "question": "AWS App Runnerの主な利点はどれですか？",
+    "options": [
+      "インフラ管理が必要",
+      "ソースコードから直接Webアプリケーションをデプロイ",
+      "データベース専用サービス",
+      "ファイル共有のみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS App Runnerは、ソースコードやコンテナイメージから直接、Webアプリケーションやマイクロサービスを簡単にデプロイできるフルマネージドサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 301,
+    "question": "Amazon QuickSightの主な機能はどれですか？",
+    "options": [
+      "データベースのバックアップ",
+      "ビジネスインテリジェンスと可視化",
+      "Webサイトの開発",
+      "メール送信"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon QuickSightは、組織の全員がビジネス分析を利用できるように設計されたビジネスインテリジェンス（BI）サービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 302,
+    "question": "AWS Migration Hub の主な機能はどれですか？",
+    "options": [
+      "データベースの作成",
+      "アプリケーション移行の進捗追跡",
+      "コスト計算",
+      "セキュリティスキャン"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Migration Hubは、複数のAWS移行ツールからの移行進捗を単一の場所で追跡できるサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 303,
+    "question": "ElastiCacheのRedisとMemcachedの主な違いはどれですか？",
+    "options": [
+      "Redisは永続化をサポート、Memcachedはサポートしない",
+      "どちらも同じ機能を提供",
+      "Memcachedの方が新しい技術",
+      "Redisはメモリを使わない"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ElastiCache for Redisはデータの永続化、レプリケーション、高可用性をサポートしますが、Memcachedはシンプルなキャッシュ機能のみ提供します。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 304,
+    "question": "AWS Direct Connect Gatewayの主な利点はどれですか？",
+    "options": [
+      "単一リージョンのみサポート",
+      "複数リージョンのVPCへの単一接続ポイント",
+      "データの暗号化のみ",
+      "コスト削減のみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Direct Connect Gatewayは、単一のDirect Connect接続から複数のリージョンにある複数のVPCにアクセスできる機能を提供します。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 305,
+    "question": "AWS Cloud9の主な特徴はどれですか？",
+    "options": [
+      "データベース管理ツール",
+      "クラウドベースの統合開発環境（IDE）",
+      "監視・ログ分析ツール",
+      "ファイル同期サービス"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Cloud9は、ブラウザからコードを記述、実行、デバッグできるクラウドベースの統合開発環境です。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 306,
+    "question": "Amazon ECR（Elastic Container Registry）の主な用途はどれですか？",
+    "options": [
+      "仮想マシンの管理",
+      "Dockerコンテナイメージの保存と管理",
+      "データベースのバックアップ",
+      "Webサイトのホスティング"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon ECRは、Dockerコンテナイメージを保存、管理、デプロイするためのフルマネージドコンテナレジストリです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 307,
+    "question": "AWS Server Migration Service（SMS）の主な機能はどれですか？",
+    "options": [
+      "メール送信",
+      "オンプレミスサーバーのクラウド移行",
+      "データベースの暗号化",
+      "ネットワーク監視"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS SMSは、オンプレミスのサーバーをAmazon EC2インスタンスに移行するプロセスを自動化し、調整するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 308,
+    "question": "AWS Step Functionsでサポートされていないワークフローパターンはどれですか？",
+    "options": [
+      "順次実行",
+      "並列実行",
+      "条件分岐",
+      "物理的なハードウェア制御"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Step Functionsはクラウド内のワークフロー調整サービスで、物理的なハードウェアの直接制御は行いません。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 309,
+    "question": "Amazon Kinesis Analyticsの主な用途はどれですか？",
+    "options": [
+      "静的データの分析",
+      "リアルタイムストリーミングデータの分析",
+      "ファイルの圧縮",
+      "画像の編集"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Kinesis Analyticsは、ストリーミングデータをリアルタイムで分析し、SQLクエリを使用してインサイトを取得できるサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 310,
+    "question": "AWS Backupがサポートするサービスとして正しくないものはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "Amazon RDS",
+      "Amazon S3",
+      "オンプレミスのファイルサーバー"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS BackupはAWSサービスの一元的なバックアップを提供しますが、オンプレミスのファイルサーバーは直接サポートしていません。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 311,
+    "question": "AWS Application Discovery Serviceの主な機能はどれですか？",
+    "options": [
+      "新しいアプリケーションの開発",
+      "オンプレミスアプリケーションの検出と分析",
+      "クラウドコストの計算",
+      "セキュリティスキャン"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Application Discovery Serviceは、企業のオンプレミスデータセンターに関する情報を収集し、移行プロジェクトの計画を支援します。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 312,
+    "question": "Amazon SQSの標準キューとFIFOキューの主な違いはどれですか？",
+    "options": [
+      "標準キューは有料、FIFOキューは無料",
+      "FIFOキューは順序保証と重複排除を提供",
+      "標準キューの方が高性能",
+      "FIFOキューはメッセージを保存しない"
+    ],
+    "correctAnswer": 1,
+    "explanation": "FIFO（First-In-First-Out）キューは、メッセージの厳密な順序保証と重複排除機能を提供しますが、標準キューはより高いスループットを提供します。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 313,
+    "question": "AWS CodeStarの主な機能はどれですか？",
+    "options": [
+      "コードのバージョン管理のみ",
+      "統合開発プロジェクトのセットアップと管理",
+      "データベースの管理",
+      "ネットワークの設定"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS CodeStarは、開発プロジェクトを迅速にセットアップし、CI/CDツールチェーンを統合的に管理できるサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 314,
+    "question": "AWS VPN Gatewayでサポートされる接続タイプとして正しくないものはどれですか？",
+    "options": [
+      "Site-to-Site VPN",
+      "Client VPN",
+      "Transit Gateway VPN",
+      "Peer-to-Peer VPN"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS VPNは Site-to-Site VPN、Client VPN、Transit Gateway VPN をサポートしますが、Peer-to-Peer VPN は標準的な接続タイプではありません。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 315,
+    "question": "Amazon Global Acceleratorと CloudFront の主な違いはどれですか？",
+    "options": [
+      "Global Acceleratorは動的コンテンツに最適化",
+      "CloudFrontは静的コンテンツのみサポート",
+      "両方とも同じ機能を提供",
+      "Global Acceleratorはリージョン内のみで動作"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Global AcceleratorはTCP/UDPトラフィックと動的コンテンツの配信に最適化されており、CloudFrontは主に静的コンテンツのキャッシュ配信に特化しています。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 316,
+    "question": "AWS Lightsailでサポートされていない機能はどれですか？",
+    "options": [
+      "仮想プライベートサーバー",
+      "マネージドデータベース",
+      "ロードバランサー",
+      "カスタムVPC設定"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Lightsailは簡素化されたクラウドプラットフォームで、詳細なVPC設定はサポートしていません。EC2のような高度なネットワーク設定が必要な場合は他のサービスを使用します。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 317,
+    "question": "Amazon SNSでサポートされていない配信プロトコルはどれですか？",
+    "options": [
+      "HTTP/HTTPS",
+      "Email",
+      "SQS",
+      "FTP"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon SNSは HTTP/HTTPS、Email、SMS、SQS、Lambda などの配信プロトコルをサポートしますが、FTP は対応していません。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 318,
+    "question": "AWS Outpostsの主な特徴はどれですか？",
+    "options": [
+      "クラウドのみで動作",
+      "オンプレミスでAWSサービスを実行",
+      "メール送信専用",
+      "データベースのみサポート"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Outpostsは、オンプレミスの施設にAWSのインフラストラクチャとサービスを提供するフルマネージドサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 319,
+    "question": "Amazon Managed Streaming for Apache Kafka（MSK）の主な用途はどれですか？",
+    "options": [
+      "リレーショナルデータベース",
+      "リアルタイムストリーミングデータプラットフォーム",
+      "ファイル同期",
+      "Webサイトホスティング"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon MSKは、Apache Kafkaを使用してリアルタイムデータのストリーミングアプリケーションを構築・実行するためのフルマネージドサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 320,
+    "question": "AWS Wavelengthの主な特徴はどれですか？",
+    "options": [
+      "標準的なクラウドサービス",
+      "5Gネットワークエッジでの超低レイテンシーアプリケーション",
+      "データベース専用サービス",
+      "ファイルストレージのみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Wavelengthは、5Gネットワークのエッジに AWS コンピューティングとストレージサービスを組み込み、超低レイテンシーアプリケーションを実現します。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 321,
+    "question": "IAMにおけるクロスアカウントアクセス時に、AssumeRoleのセッション期間の最大値はどれですか？",
+    "options": [
+      "1時間",
+      "12時間",
+      "24時間",
+      "7日"
+    ],
+    "correctAnswer": 1,
+    "explanation": "IAMロールのAssumeRoleセッションの最大継続時間は12時間です。デフォルトは1時間ですが、ロール設定で最大12時間まで延長可能です。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 322,
+    "question": "IAMサービスリンクロール（Service-Linked Role）の主な特徴はどれですか？",
+    "options": [
+      "お客様が作成・削除できる",
+      "AWSサービスが直接使用する事前定義されたロール",
+      "クロスアカウントアクセス専用",
+      "ルートアカウントのみ使用可能"
+    ],
+    "correctAnswer": 1,
+    "explanation": "サービスリンクロールは、特定のAWSサービスが他のAWSサービスを呼び出すために使用する事前定義されたIAMロールで、サービス自体によって管理されます。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 323,
+    "question": "IAMパーミッションバウンダリーの主な目的はどれですか？",
+    "options": [
+      "ユーザーの最大権限を制限",
+      "パスワードの複雑性を定義",
+      "MFAを強制",
+      "セッション時間を延長"
+    ],
+    "correctAnswer": 0,
+    "explanation": "パーミッションバウンダリーは、IAMエンティティ（ユーザーまたはロール）が取得できる最大権限を定義し、権限の上限を設定します。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 324,
+    "question": "IAMポリシー評価において、「NotAction」要素の動作として正しいものはどれですか？",
+    "options": [
+      "指定されたアクション以外をすべて許可",
+      "指定されたアクション以外をすべて拒否",
+      "指定されたアクションを明示的に拒否",
+      "ポリシーを無効化"
+    ],
+    "correctAnswer": 0,
+    "explanation": "「NotAction」は指定されたアクション以外のすべてのアクションに対してステートメントの効果（Allow/Deny）を適用します。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 325,
+    "question": "AWS KMSにおけるエンベロープ暗号化の利点として正しくないものはどれですか？",
+    "options": [
+      "大量データの暗号化性能向上",
+      "データキーの安全な管理",
+      "ネットワーク転送量の削減",
+      "暗号化強度の低下"
+    ],
+    "correctAnswer": 3,
+    "explanation": "エンベロープ暗号化は暗号化強度を低下させません。データキーで実際のデータを暗号化し、マスターキーでデータキーを暗号化することで、セキュリティと性能の両方を向上させます。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 326,
+    "question": "AWS KMSカスタマーマネージドキーのキーポリシーで設定できない権限はどれですか？",
+    "options": [
+      "キーの使用権限",
+      "キーの管理権限",
+      "他のAWSアカウントへのアクセス許可",
+      "物理HSMへの直接アクセス権限"
+    ],
+    "correctAnswer": 3,
+    "explanation": "KMSキーポリシーでは、物理HSMへの直接アクセス権限は設定できません。KMSはハードウェアレベルを抽象化して管理します。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 327,
+    "question": "AWS CloudHSMとAWS KMSの主な違いとして正しいものはどれですか？",
+    "options": [
+      "CloudHSMはマルチテナント、KMSはシングルテナント",
+      "CloudHSMは専用HSM、KMSは共有サービス",
+      "CloudHSMは無料、KMSは有料",
+      "CloudHSMはソフトウェア暗号化のみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "CloudHSMは顧客専用のハードウェアセキュリティモジュールを提供し、KMSは複数の顧客で共有されるマネージドサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 328,
+    "question": "CloudWatchにおけるセキュリティメトリクスとして監視できるものはどれですか？",
+    "options": [
+      "ルートアカウントの使用状況",
+      "IAMユーザーのパスワード強度",
+      "EC2インスタンス内のファイルアクセス",
+      "プライベートサブネットの内部通信"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CloudWatchでは、CloudTrailと連携してルートアカウントの使用などのセキュリティ関連のメトリクスを監視できます。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 329,
+    "question": "VPCフローログの分析で検出できるセキュリティ脅威として適切でないものはどれですか？",
+    "options": [
+      "異常な通信パターン",
+      "DDoS攻撃の兆候",
+      "アプリケーションの脆弱性",
+      "未承認のネットワークアクセス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "VPCフローログはネットワークレベルの情報を記録するため、アプリケーションレベルの脆弱性は直接検出できません。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 330,
+    "question": "AWS GuardDutyの脅威検出で使用されるデータソースに含まれないものはどれですか？",
+    "options": [
+      "DNS ログ",
+      "VPC フローログ",
+      "CloudTrail APIログ",
+      "アプリケーションログ"
+    ],
+    "correctAnswer": 3,
+    "explanation": "GuardDutyは DNS ログ、VPC フローログ、CloudTrail イベントログを分析しますが、カスタムアプリケーションログは直接分析しません。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 331,
+    "question": "SOC（Service Organization Control）レポートの種類として存在しないものはどれですか？",
+    "options": [
+      "SOC 1",
+      "SOC 2",
+      "SOC 3",
+      "SOC 4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "SOCレポートにはSOC 1（財務報告に関する内部統制）、SOC 2（セキュリティ、可用性等）、SOC 3（一般利用レポート）の3種類があります。SOC 4は存在しません。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 332,
+    "question": "PCI DSS要件において、カード会員データの保存期間に関する推奨事項はどれですか？",
+    "options": [
+      "永続的に保存",
+      "ビジネス要件に必要な最小期間",
+      "5年間の保存義務",
+      "暗号化すれば期間制限なし"
+    ],
+    "correctAnswer": 1,
+    "explanation": "PCI DSSでは、カード会員データはビジネスおよび法的要件に必要な最小期間のみ保存し、不要になったら安全に削除することを要求しています。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 333,
+    "question": "HIPAA準拠において必要とされる技術的保護措置に含まれないものはどれですか？",
+    "options": [
+      "データの暗号化",
+      "アクセス制御",
+      "監査ログ",
+      "物理的な施設警備"
+    ],
+    "correctAnswer": 3,
+    "explanation": "物理的な施設警備は物理的保護措置に分類されます。技術的保護措置には暗号化、アクセス制御、監査ログなどが含まれます。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 334,
+    "question": "FedRAMP（Federal Risk and Authorization Management Program）の認定レベルとして存在しないものはどれですか？",
+    "options": [
+      "Low",
+      "Moderate",
+      "High",
+      "Critical"
+    ],
+    "correctAnswer": 3,
+    "explanation": "FedRAMPの認定レベルは Low、Moderate、High の3段階です。Critical レベルは存在しません。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 335,
+    "question": "AWS Artifactで入手できるコンプライアンス文書として正しくないものはどれですか？",
+    "options": [
+      "ISO 27001認証書",
+      "SOC レポート",
+      "PCI DSS AoC（適合証明書）",
+      "個別顧客のセキュリティ監査結果"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Artifactでは業界標準のコンプライアンス文書を提供しますが、個別顧客固有のセキュリティ監査結果は含まれません。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 336,
+    "question": "AWS Artifactで提供されるBAA（Business Associate Agreement）の主な目的はどれですか？",
+    "options": [
+      "料金体系の合意",
+      "HIPAA準拠のための契約",
+      "サービスレベルの保証",
+      "知的財産権の保護"
+    ],
+    "correctAnswer": 1,
+    "explanation": "BAAは、保護対象保健情報（PHI）を扱うビジネスアソシエイトとして、AWSがHIPAAセキュリティおよびプライバシー規則を遵守することを定めた契約です。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 337,
+    "question": "SAML（Security Assertion Markup Language）フェデレーションにおけるIdP（Identity Provider）の役割はどれですか？",
+    "options": [
+      "ユーザー認証とアサーション発行",
+      "AWSサービスへの直接アクセス",
+      "暗号化キーの管理",
+      "ネットワークルーティング"
+    ],
+    "correctAnswer": 0,
+    "explanation": "IdPはユーザーの認証を行い、認証成功時にセキュリティアサーション（ユーザー属性とロール情報）をSP（Service Provider）に発行します。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 338,
+    "question": "AWS SSOにおけるSCIM（System for Cross-domain Identity Management）の主な機能はどれですか？",
+    "options": [
+      "パスワードの暗号化",
+      "ユーザーとグループの自動プロビジョニング",
+      "多要素認証の提供",
+      "ログ分析"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SCIMは、外部のIDプロバイダーからAWS SSOへのユーザーとグループの自動プロビジョニング・デプロビジョニングを可能にするプロトコルです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 339,
+    "question": "OpenID Connect（OIDC）とOAuth 2.0の関係として正しいものはどれですか？",
+    "options": [
+      "OIDCはOAuth 2.0の拡張",
+      "OAuth 2.0はOIDCの拡張",
+      "完全に異なるプロトコル",
+      "同じプロトコルの別名"
+    ],
+    "correctAnswer": 0,
+    "explanation": "OpenID ConnectはOAuth 2.0プロトコルの上に構築された認証レイヤーで、OAuth 2.0の認可機能に加えて認証情報も提供します。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 340,
+    "question": "AWS WAFのマネージドルールセットに含まれる保護対象として正しくないものはどれですか？",
+    "options": [
+      "SQLインジェクション",
+      "クロスサイトスクリプティング（XSS）",
+      "DDoS攻撃",
+      "既知の悪意のあるIPアドレス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS WAFは主にレイヤー7（アプリケーション層）の攻撃から保護します。DDoS攻撃の保護は主にAWS Shieldが担当します。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 341,
+    "question": "AWS Shield Advancedが提供する機能として正しくないものはどれですか？",
+    "options": [
+      "DDoS Response Team（DRT）による24時間サポート",
+      "高度なDDoS攻撃の軽減",
+      "DDoS攻撃コストの保護",
+      "アプリケーションレベルの脆弱性修正"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Shield Advancedは DDoS攻撃に特化した保護サービスです。アプリケーションレベルの脆弱性修正は提供しません。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 342,
+    "question": "AWS Firewall Managerが一元管理できるサービスとして正しくないものはどれですか？",
+    "options": [
+      "AWS WAF",
+      "AWS Shield Advanced",
+      "VPCセキュリティグループ",
+      "IAMユーザー"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Firewall Managerはファイアウォール関連のサービス（WAF、Shield、セキュリティグループ等）を一元管理しますが、IAMユーザー管理は対象外です。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 343,
+    "question": "Amazon Macieが検出できるPII（個人識別情報）のタイプとして正しくないものはどれですか？",
+    "options": [
+      "クレジットカード番号",
+      "社会保障番号",
+      "パスポート番号",
+      "EC2インスタンスのCPU使用率"
+    ],
+    "correctAnswer": 3,
+    "explanation": "MacieはS3内の機密データとPIIを検出しますが、EC2のCPU使用率などのシステムメトリクスは検出対象ではありません。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 344,
+    "question": "Amazon Macieのデータ分類において、機密度レベルとして設定されないものはどれですか？",
+    "options": [
+      "Public",
+      "Internal",
+      "Confidential",
+      "Encrypted"
+    ],
+    "correctAnswer": 3,
+    "explanation": "「Encrypted」は暗号化状態を示しますが、データの機密度レベルではありません。機密度レベルはPublic、Internal、Confidentialなどで分類されます。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 345,
+    "question": "DLP（Data Loss Prevention）戦略において、AWS環境で実装できる対策として適切でないものはどれですか？",
+    "options": [
+      "S3バケットポリシーによるアクセス制限",
+      "Amazon Macieによる機密データ検出",
+      "VPCエンドポイントによるプライベート通信",
+      "物理的なUSBポートの無効化"
+    ],
+    "correctAnswer": 3,
+    "explanation": "物理的なUSBポートの無効化はオンプレミス環境の対策です。AWS環境ではクラウド固有のDLP対策を実装します。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 346,
+    "question": "AWS Security Hubにおけるセキュリティ標準として統合されていないものはどれですか？",
+    "options": [
+      "AWS Foundational Security Standard",
+      "CIS AWS Foundations Benchmark",
+      "PCI DSS v3.2.1",
+      "GDPR Compliance Framework"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Security HubはAWS独自の標準、CIS、PCI DSSなどの技術的セキュリティ標準を統合しますが、GDPRのような法的フレームワークは直接統合されていません。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 347,
+    "question": "セキュリティインシデントレスポンスの自動化において、AWS Systems Manager Automationが実行できるアクションとして適切でないものはどれですか？",
+    "options": [
+      "侵害されたEC2インスタンスの隔離",
+      "セキュリティグループルールの自動修正",
+      "IAMユーザーの無効化",
+      "物理的なネットワークケーブルの切断"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Systems Manager Automationはクラウド内のリソースを自動制御できますが、物理的なハードウェア操作は実行できません。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 348,
+    "question": "セキュリティプレイブックの自動実行において、AWS Lambda関数が実行できるレスポンスアクションとして適切でないものはどれですか？",
+    "options": [
+      "SNS経由でのアラート送信",
+      "CloudFormationスタックの削除",
+      "GuardDuty検出結果の詳細分析",
+      "データセンターの物理的な電源切断"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Lambda関数はクラウドAPIを通じて様々な自動化を実行できますが、データセンターの物理的な操作は実行できません。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 349,
+    "question": "AWS Inspectorが提供するセキュリティ評価として正しくないものはどれですか？",
+    "options": [
+      "EC2インスタンスの脆弱性評価",
+      "コンテナイメージの脆弱性スキャン",
+      "Lambda関数のコード品質評価",
+      "ネットワーク設定の到達可能性分析"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Inspectorは脆弱性評価とネットワーク分析に特化しており、Lambda関数のコード品質評価は提供しません。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 350,
+    "question": "AWS Systems Manager Patch Managerと AWS Inspectorの主な違いはどれですか？",
+    "options": [
+      "Patch Managerは脆弱性検出、Inspectorは修正実行",
+      "Patch Managerは修正実行、Inspectorは脆弱性検出",
+      "両方とも同じ機能を提供",
+      "Patch ManagerはWindows専用、InspectorはLinux専用"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Patch Managerはパッチの適用（修正実行）を行い、Inspectorは脆弱性の検出と評価を行います。両者は相補的な関係にあります。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 351,
+    "question": "AWS Security HubとAWS Configの主な違いはどれですか？",
+    "options": [
+      "Security Hubはセキュリティ結果の統合、Configは設定コンプライアンス",
+      "Security Hubは設定管理、Configはセキュリティ監視",
+      "両方とも同じ機能を提供",
+      "Security Hubは有料、Configは無料"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Security Hubは複数のセキュリティサービスからの検出結果を統合し、Configはリソース設定の記録とコンプライアンス評価を行います。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 352,
+    "question": "クロスアカウントロールの AssumeRole 時に、外部IDの主な目的はどれですか？",
+    "options": [
+      "セッション暗号化の強化",
+      "混同した代理人問題（Confused Deputy Problem）の防止",
+      "ロール権限の拡張",
+      "セッション時間の延長"
+    ],
+    "correctAnswer": 1,
+    "explanation": "外部IDは、第三者サービスが意図せず他の顧客のリソースにアクセスしてしまう混同した代理人問題を防ぐためのセキュリティ措置です。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 353,
+    "question": "IAMポリシーの「Condition」要素で使用できない条件キーのタイプはどれですか？",
+    "options": [
+      "aws:RequestedRegion",
+      "aws:SourceIp",
+      "aws:CurrentTime",
+      "aws:PhysicalLocation"
+    ],
+    "correctAnswer": 3,
+    "explanation": "「aws:PhysicalLocation」は存在しない条件キーです。IAMでは論理的な条件（リージョン、IP、時間等）は利用できますが、物理的な位置は直接指定できません。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 354,
+    "question": "AWS KMSキーの自動ローテーションが有効な場合、古いキーで暗号化されたデータはどうなりますか？",
+    "options": [
+      "自動的に新しいキーで再暗号化される",
+      "アクセス不可能になる",
+      "古いキーバージョンで復号化可能",
+      "手動で移行が必要"
+    ],
+    "correctAnswer": 2,
+    "explanation": "KMSの自動ローテーションでは、古いデータは古いキーバージョンで引き続き復号化でき、新しいデータは新しいキーバージョンで暗号化されます。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 355,
+    "question": "CloudTrailのデータイベントとマネジメントイベントの主な違いはどれですか？",
+    "options": [
+      "データイベントはS3オブジェクト操作、マネジメントイベントはAWS API操作",
+      "データイベントは無料、マネジメントイベントは有料",
+      "データイベントはリアルタイム、マネジメントイベントは遅延あり",
+      "データイベントは暗号化、マネジメントイベントは平文"
+    ],
+    "correctAnswer": 0,
+    "explanation": "データイベントはS3オブジェクトやLambda関数の実行など、リソース内のデータ操作を記録し、マネジメントイベントはIAMやEC2などのAWSサービスAPIの呼び出しを記録します。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 356,
+    "question": "AWS Organizations SCPの継承動作として正しいものはどれですか？",
+    "options": [
+      "子OUは親OUのSCPを継承しない",
+      "子OUは親OUのSCPを継承し、追加で制限可能",
+      "子OUは親OUのSCPを上書き可能",
+      "SCPは組織ルートでのみ適用可能"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SCPは階層的に継承され、子OUや子アカウントは親OUのSCPによる制限を受け、さらに追加の制限を適用できます。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 357,
+    "question": "AWS Certificate Manager（ACM）のSSL/TLS証明書が自動更新されるサービスとして正しくないものはどれですか？",
+    "options": [
+      "Elastic Load Balancer",
+      "Amazon CloudFront",
+      "Amazon API Gateway",
+      "EC2インスタンス上のApache"
+    ],
+    "correctAnswer": 3,
+    "explanation": "ACMの証明書自動更新は、統合されたAWSサービス（ELB、CloudFront、API Gateway等）でのみ機能します。EC2インスタンス上のソフトウェアでは手動管理が必要です。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 358,
+    "question": "VPCセキュリティグループとNACL（Network ACL）の動作モードの違いとして正しいものはどれですか？",
+    "options": [
+      "セキュリティグループはホワイトリスト、NACLはブラックリスト",
+      "セキュリティグループはブラックリスト、NACLはホワイトリスト",
+      "両方ともホワイトリスト方式",
+      "両方ともブラックリスト方式"
+    ],
+    "correctAnswer": 0,
+    "explanation": "セキュリティグループはデフォルトで全拒否のホワイトリスト方式、NACLはデフォルトで全許可のブラックリスト方式として動作します。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 359,
+    "question": "AWS Secrets Managerの自動ローテーション機能がサポートするデータベースとして正しくないものはどれですか？",
+    "options": [
+      "Amazon RDS MySQL",
+      "Amazon RDS PostgreSQL",
+      "Amazon DocumentDB",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Secrets Managerの自動ローテーション機能は、RDS、DocumentDB、Redshiftなどの従来のデータベースをサポートしますが、DynamoDBには対応していません。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 360,
+    "question": "AWS CloudTrail の証跡（Trail）設定において、データの整合性を確保する機能はどれですか？",
+    "options": [
+      "ログファイルの暗号化",
+      "ログファイルの検証",
+      "リアルタイム配信",
+      "複数リージョンへの配信"
+    ],
+    "correctAnswer": 1,
+    "explanation": "CloudTrailのログファイル検証機能は、デジタル署名を使用してログファイルが改ざんされていないことを証明します。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 361,
+    "question": "AWS Config の評価モードとして存在しないものはどれですか？",
+    "options": [
+      "設定変更トリガー",
+      "定期評価",
+      "ハイブリッド評価",
+      "リアルタイム連続評価"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Configの評価モードは、設定変更トリガー、定期評価、ハイブリッド評価（両方の組み合わせ）があります。リアルタイム連続評価モードは存在しません。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 362,
+    "question": "IAM Access Analyzerが検出する「意図しないアクセス」の例として正しくないものはどれですか？",
+    "options": [
+      "外部アカウントと共有されているS3バケット",
+      "パブリックアクセス可能なIAMロール",
+      "インターネットゲートウェイ経由のアクセス",
+      "クロスアカウントのKMSキー共有"
+    ],
+    "correctAnswer": 2,
+    "explanation": "インターネットゲートウェイ経由のアクセスは、ネットワークレベルの設定であり、IAM Access Analyzerの検出対象ではありません。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 363,
+    "question": "AWS Lambda関数におけるセキュリティベストプラクティスとして適切でないものはどれですか？",
+    "options": [
+      "最小権限の原則に基づくIAMロール設定",
+      "環境変数の暗号化",
+      "すべての関数に管理者権限を付与",
+      "VPC内での実行による分離"
+    ],
+    "correctAnswer": 2,
+    "explanation": "すべての関数に管理者権限を付与することは、最小権限の原則に反するセキュリティのアンチパターンです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 364,
+    "question": "Amazon EBS暗号化において、暗号化キーの管理オプションとして選択できないものはどれですか？",
+    "options": [
+      "AWS管理キー",
+      "カスタマー管理キー",
+      "デフォルト暗号化キー",
+      "ユーザー持ち込みキー（BYOK）"
+    ],
+    "correctAnswer": 3,
+    "explanation": "EBS暗号化では、AWS管理キー、カスタマー管理KMSキー、デフォルト暗号化キーを選択できますが、ユーザーが外部で生成したキーの持ち込みは直接サポートしていません。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 365,
+    "question": "AWS Directory Service の Active Directory 連携において、信頼関係の設定で実現できる機能はどれですか？",
+    "options": [
+      "パスワードの同期",
+      "シングルサインオン（SSO）",
+      "データの複製",
+      "ネットワークの統合"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Active Directory信頼関係により、オンプレミスのADユーザーがAWS Managed Microsoft ADに対してシングルサインオンできるようになります。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 366,
+    "question": "AWS WAFv2のルールグループにおける「重み付け」の機能はどれですか？",
+    "options": [
+      "ルールの実行順序を制御",
+      "トラフィックの負荷分散",
+      "レート制限の調整",
+      "ログの詳細度設定"
+    ],
+    "correctAnswer": 0,
+    "explanation": "WAFv2では、ルールに重み（priority）を設定することで、複数のルールが存在する場合の評価順序を制御できます。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 367,
+    "question": "Amazon GuardDutyの機械学習モデルが検出する異常な活動として、正しくないものはどれですか？",
+    "options": [
+      "異常な API コール パターン",
+      "既知のマルウェア通信",
+      "暗号通貨マイニングの兆候",
+      "アプリケーションのバグ"
+    ],
+    "correctAnswer": 3,
+    "explanation": "GuardDutyはセキュリティ脅威の検出に特化しており、アプリケーションのバグやパフォーマンス問題は検出対象外です。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 368,
+    "question": "AWS Security Token Service（STS）のAssumeRoleWithWebIdentityで連携できるIDプロバイダーとして正しくないものはどれですか？",
+    "options": [
+      "Amazon Cognito",
+      "Google",
+      "Facebook",
+      "LDAP"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AssumeRoleWithWebIdentityは、OpenID ConnectやOAuth 2.0をサポートするWebアイデンティティプロバイダー（Amazon Cognito、Google、Facebook等）と連携しますが、LDAP は直接サポートしていません。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 369,
+    "question": "AWS Resource Access Manager（RAM）で共有できるリソースとして正しくないものはどれですか？",
+    "options": [
+      "VPCサブネット",
+      "Transit Gateway",
+      "Route 53 Resolver ルール",
+      "EC2インスタンス"
+    ],
+    "correctAnswer": 3,
+    "explanation": "RAMではネットワーク関連リソース（サブネット、Transit Gateway、Route 53 Resolverルール等）を共有できますが、EC2インスタンス自体は共有リソースではありません。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 370,
+    "question": "マルチリージョン環境でのCloudTrail設定において、グローバルサービスイベントの記録に関する推奨設定はどれですか？",
+    "options": [
+      "すべてのリージョンで記録",
+      "単一リージョンで記録",
+      "プライマリリージョンでのみ記録",
+      "記録しない"
+    ],
+    "correctAnswer": 1,
+    "explanation": "IAMやCloudFrontなどのグローバルサービスイベントは、重複を避けるため単一リージョン（通常はus-east-1）でのみ記録することが推奨されます。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 371,
+    "question": "AWS Cost Categoriesを使用してプロジェクト別にコストを分類する際、最も適切な設定方法はどれですか？",
+    "options": [
+      "リージョンごとの分類のみ",
+      "コストアロケーションタグを基にした分類ルール",
+      "サービスタイプごとの固定分類",
+      "アカウントごとの分類のみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cost Categoriesは、コストアロケーションタグや他の属性を基にしたルールを設定することで、プロジェクトや部門などの論理的なグループ別にコストを自動分類できます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 372,
+    "question": "AWS Billing ConductorのCustom Billing Groupsの主な用途はどれですか？",
+    "options": [
+      "サービス利用量の制限",
+      "カスタム料金設定による請求管理",
+      "コストの自動最適化",
+      "予算の自動作成"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Billing Conductorは、マネージドサービスプロバイダーなどが顧客向けにカスタムの料金設定や請求グループを作成するためのサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 373,
+    "question": "Compute Savings PlansとEC2 Instance Savings Plansの主な違いはどれですか？",
+    "options": [
+      "Compute Savings Plansはより柔軟性が高い",
+      "EC2 Instance Savings Plansはより割引率が高い",
+      "契約期間が異なる",
+      "対象サービスは同じ"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Compute Savings Plansは、インスタンスファミリー、リージョン、OSを自由に変更できる柔軟性があり、EC2 Instance Savings Plansより柔軟ですが、割引率は若干低くなります。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 374,
+    "question": "異なるアベイラビリティーゾーン間でのデータ転送料金について正しいものはどれですか？",
+    "options": [
+      "常に無料",
+      "同一リージョン内では1GBあたり$0.01",
+      "距離に応じて料金が変動",
+      "プライベートIPでは無料、パブリックIPでは有料"
+    ],
+    "correctAnswer": 1,
+    "explanation": "同一リージョン内の異なるAZ間でのデータ転送は、プライベートIPとパブリックIPの両方で1GBあたり$0.01の料金が発生します。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 375,
+    "question": "CloudFrontのPriceClassを「Use Only US, Canada and Europe」に設定した場合の影響はどれですか？",
+    "options": [
+      "世界中からアクセス不可能になる",
+      "料金が安くなるが、他地域からのレイテンシが増加する可能性",
+      "セキュリティが向上する",
+      "キャッシュ効率が向上する"
+    ],
+    "correctAnswer": 1,
+    "explanation": "PriceClassを制限すると、使用されるエッジロケーションが減り料金は安くなりますが、他地域のユーザーにはより遠いエッジロケーションからコンテンツが配信されレイテンシが増加する可能性があります。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 376,
+    "question": "AWS Lambda関数の料金体系において、1ミリ秒未満の実行時間はどのように請求されますか？",
+    "options": [
+      "無料",
+      "1ミリ秒として切り上げ請求",
+      "実際の実行時間で請求",
+      "1秒として請求"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lambda関数の実行時間は1ミリ秒単位で測定され、1ミリ秒未満の実行時間は1ミリ秒として切り上げられて請求されます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 377,
+    "question": "Amazon API Gatewayの料金体系に含まれないものはどれですか？",
+    "options": [
+      "APIリクエスト数による課金",
+      "データ転送料金",
+      "キャッシング使用料金",
+      "バックエンドサービスの実行料金"
+    ],
+    "correctAnswer": 3,
+    "explanation": "API Gatewayの料金にはリクエスト数、データ転送、キャッシング使用料が含まれますが、バックエンドのLambda関数やEC2インスタンスの実行料金は別途課金されます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 378,
+    "question": "AWS Step Functionsの料金モデルで正しいものはどれですか？",
+    "options": [
+      "月額固定料金",
+      "実行されたステートトランジション数による従量課金",
+      "ワークフロー定義数による課金",
+      "実行時間による課金"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Step Functionsは、ワークフロー内で実行されたステートトランジション（状態遷移）の数に基づいて従量課金されます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 379,
+    "question": "AWS Enterprise Supportプランに含まれるTechnical Account Manager（TAM）の主な役割はどれですか？",
+    "options": [
+      "24時間の技術サポート対応",
+      "戦略的ガイダンスとプロアクティブサポート",
+      "障害時の緊急対応のみ",
+      "請求に関する問い合わせ対応"
+    ],
+    "correctAnswer": 1,
+    "explanation": "TAMは技術的な戦略ガイダンス、アーキテクチャレビュー、プロアクティブなサポート、ベストプラクティスの提供を行う専任のサポート担当者です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 380,
+    "question": "AWS Enterprise Supportの「Proactive Support」に含まれるサービスとして正しくないものはどれですか？",
+    "options": [
+      "Well-Architected Reviewの実施",
+      "インフラストラクチャイベント管理",
+      "アプリケーションコードのデバッグ",
+      "運用レビューとガイダンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Proactive Supportには様々な運用支援が含まれますが、顧客のアプリケーションコードの具体的なデバッグは含まれません。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 381,
+    "question": "AWS Enterprise SupportのConcierge Support Teamが提供するサービスはどれですか？",
+    "options": [
+      "技術的な問題解決",
+      "請求とアカウント管理の専門支援",
+      "セキュリティインシデント対応",
+      "パフォーマンス最適化"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Concierge Support Teamは、請求の問い合わせ、アカウント管理、サービス制限の引き上げなど、アカウント関連事項の専門的な支援を提供します。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 382,
+    "question": "AWS Marketplaceでの「Private Marketplace」の主な利点はどれですか？",
+    "options": [
+      "価格が安くなる",
+      "組織承認済みソフトウェアのみアクセス可能",
+      "インストールが自動化される",
+      "サポートが無料になる"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Private Marketplaceは、組織のIT管理者が事前承認したソフトウェアのみを従業員がアクセス・調達できるようにするガバナンス機能です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 383,
+    "question": "AWS MarketplaceでのBYOL（Bring Your Own License）モデルの主な特徴はどれですか？",
+    "options": [
+      "AWSが新しいライセンスを提供",
+      "既存ライセンスをクラウドで使用",
+      "ライセンス料金が無料になる",
+      "オープンソースソフトウェアのみ対象"
+    ],
+    "correctAnswer": 1,
+    "explanation": "BYOLは、お客様が既存のオンプレミスで使用しているソフトウェアライセンスをAWS環境で引き続き使用できるモデルです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 384,
+    "question": "AWS Marketplaceでのサードパーティソフトウェアの請求処理はどのように行われますか？",
+    "options": [
+      "ソフトウェア提供者から直接請求",
+      "AWS請求書に統合して請求",
+      "クレジットカードでの別途支払い",
+      "年間契約のみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Marketplaceで購入したサードパーティソフトウェアの料金は、AWS請求書に統合され、他のAWSサービス料金と一緒に請求されます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 385,
+    "question": "AWS Organizationsの統合請求における「リザーブドインスタンス共有」の仕組みはどれですか？",
+    "options": [
+      "手動で他アカウントに転送が必要",
+      "組織内アカウント間で自動的に共有される",
+      "マスターアカウントでのみ利用可能",
+      "同一リージョンでのみ共有可能"
+    ],
+    "correctAnswer": 1,
+    "explanation": "統合請求では、組織内のどのアカウントが購入したRIでも、組織内の他のアカウントの適用可能なインスタンスに自動的に割引が適用されます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 386,
+    "question": "AWS Organizationsによる統合請求での「ボリューム割引」が適用されるサービスとして正しくないものはどれですか？",
+    "options": [
+      "Amazon S3",
+      "Amazon CloudFront",
+      "AWS Lambda",
+      "EC2スポットインスタンス"
+    ],
+    "correctAnswer": 3,
+    "explanation": "S3、CloudFront、Lambdaは使用量に応じたボリューム割引があります。スポットインスタンスは市場価格ベースのため、ボリューム割引の対象ではありません。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 387,
+    "question": "AWS Compute Optimizerが提供する推奨事項に含まれないものはどれですか？",
+    "options": [
+      "EC2インスタンスのリサイズ提案",
+      "EBSボリュームの最適化提案",
+      "Lambda関数の設定最適化",
+      "データベースのクエリ最適化"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Compute OptimizerはAWSリソースの利用パターンを分析してリサイズやタイプ変更を推奨しますが、データベースクエリの最適化は対象外です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 388,
+    "question": "AWS Cost ExplorerのRight Sizing Recommendationsが基にするデータの期間はどれですか？",
+    "options": [
+      "過去7日間",
+      "過去14日間",
+      "過去30日間",
+      "過去90日間"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Right Sizing Recommendationsは、過去14日間のCloudWatchメトリクスデータを分析してインスタンスの使用パターンを評価し、最適化提案を行います。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 389,
+    "question": "AWS BudgetsのBudget Actionsで実行できるアクションとして正しくないものはどれですか？",
+    "options": [
+      "IAMポリシーの適用",
+      "EC2インスタンスの停止",
+      "Auto Scalingグループの無効化",
+      "RDSインスタンスの削除"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Budget ActionsはIAMポリシー適用、EC2/Auto Scalingの停止・無効化などのアクションを実行できますが、RDSインスタンスの削除のような破壊的なアクションは実行できません。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 390,
+    "question": "AWS Budgets「Variance Budget」の主な用途はどれですか？",
+    "options": [
+      "固定金額でのコスト監視",
+      "前期間と比較したコスト変動の監視",
+      "使用量の監視",
+      "予約インスタンスの使用率監視"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Variance Budgetは、前月や前年同期と比較して特定の変動率（例：20%増加）を超えた場合にアラートを発生させる予算タイプです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 391,
+    "question": "AWS Enterprise Discount Program (EDP)の主な特徴はどれですか？",
+    "options": [
+      "小規模事業者向けの割引プログラム",
+      "大規模利用者向けのカスタム契約割引",
+      "新規顧客向けの初回割引",
+      "学生向けの教育割引"
+    ],
+    "correctAnswer": 1,
+    "explanation": "EDPは、年間数十万ドル以上のAWS利用がある大規模顧客向けに、利用コミットと引き換えにカスタムの割引率を提供するプログラムです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 392,
+    "question": "AWS利用料金の地域間価格差の主な要因として正しくないものはどれですか？",
+    "options": [
+      "現地の電力コスト",
+      "現地の人件費",
+      "ネットワーク接続コスト",
+      "AWSのマーケティング戦略"
+    ],
+    "correctAnswer": 3,
+    "explanation": "リージョン間の価格差は、主に現地の運用コスト（電力、人件費、不動産、ネットワーク等）によって決まり、マーケティング戦略による価格設定ではありません。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 393,
+    "question": "AWS Local Zonesの料金体系について正しいものはどれですか？",
+    "options": [
+      "通常のリージョンと同一料金",
+      "通常のリージョンより高額な料金設定",
+      "無料で利用可能",
+      "月額固定料金"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Local Zonesは、超低レイテンシを提供する特殊なインフラストラクチャのため、通常のアベイラビリティーゾーンより高い料金設定となっています。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 394,
+    "question": "AWS Free Tierの「Always Free」カテゴリに含まれるサービスの特徴はどれですか？",
+    "options": [
+      "12ヶ月間のみ無料",
+      "アカウント作成から永続的に無料",
+      "学生のみ対象",
+      "クレジットカード登録不要"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Always Freeサービス（Lambda月100万リクエスト、DynamoDB 25GB等）は、アカウント作成から12ヶ月後も継続して利用できる永続的な無料枠です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 395,
+    "question": "AWS Free Tier使用量の追跡において、使用量が85%に達した場合はどうなりますか？",
+    "options": [
+      "サービスが自動停止する",
+      "アラート通知が送信される",
+      "追加料金が発生する",
+      "アカウントが制限される"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Free Tierの使用量が85%に達すると、請求アラートが送信され、無料枠を超過する前に通知を受け取ることができます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 396,
+    "question": "AWS Free Tierの対象外となる条件として正しいものはどれですか？",
+    "options": [
+      "個人アカウントでの利用",
+      "商用利用",
+      "クレジットカードの登録",
+      "組織のルートアカウントでの利用"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS OrganizationsのメンバーアカウントはFree Tierの対象ですが、組織のマネジメントアカウント（旧マスターアカウント）はFree Tierの一部制限があります。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 397,
+    "question": "データ転送料金において、「CloudFrontからインターネットへの配信」と「S3からインターネットへの配信」の価格比較として正しいものはどれですか？",
+    "options": [
+      "常にCloudFrontの方が高い",
+      "常にS3の方が高い",
+      "CloudFrontの方が通常安く、キャッシュ効率も向上",
+      "同一料金"
+    ],
+    "correctAnswer": 2,
+    "explanation": "CloudFrontは最初の10TBが月$0.085/GBに対し、S3は$0.09/GBで、CloudFrontの方が安く、さらにキャッシュによるオリジン負荷軽減も期待できます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 398,
+    "question": "AWS Global Acceleratorのデータ転送料金について正しいものはどれですか？",
+    "options": [
+      "インターネット経由と同一料金",
+      "AWSグローバルネットワーク使用料として追加料金",
+      "無料",
+      "距離に応じた従量課金"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Global Acceleratorは、AWSグローバルネットワークを使用するため、通常のインターネット経由のデータ転送料金に加えて、グローバルネットワーク使用料が発生します。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 399,
+    "question": "Lambda関数の料金体系における「Provisioned Concurrency」の課金方式はどれですか？",
+    "options": [
+      "実行時間のみ課金",
+      "プロビジョニングした容量と実行時間の両方課金",
+      "リクエスト数のみ課金",
+      "メモリ使用量のみ課金"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Provisioned Concurrencyは、確保した同時実行数に対する時間課金と、実際の関数実行に対する実行時間課金の両方が発生します。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 400,
+    "question": "Amazon API Gatewayの「Caching」機能を有効にした場合の料金への影響はどれですか？",
+    "options": [
+      "追加料金なし",
+      "キャッシュ容量に応じた時間課金が追加",
+      "リクエスト数が減るため必ず安くなる",
+      "月額固定料金に変更"
+    ],
+    "correctAnswer": 1,
+    "explanation": "API Gatewayのキャッシング機能は、設定したキャッシュ容量（0.5GB～237GB）に応じた時間課金が、通常のリクエスト課金に加えて発生します。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 401,
+    "question": "AWS Step Functions「Express Workflows」と「Standard Workflows」の料金体系の違いはどれですか？",
+    "options": [
+      "どちらも同一料金",
+      "Expressは実行回数課金、Standardは状態遷移課金",
+      "Expressは月額固定、Standardは従量課金",
+      "Expressは無料、Standardは有料"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Express Workflowsは実行回数と実行時間による課金、Standard Workflowsは状態遷移数による課金で、異なる料金体系を持ちます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 402,
+    "question": "AWS Enterprise Supportにおける「Infrastructure Event Management」の料金体系はどれですか？",
+    "options": [
+      "無料で含まれる",
+      "別途追加料金が必要",
+      "月1回まで無料",
+      "年間契約でのみ利用可能"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Infrastructure Event Managementは、Enterprise Supportプランの顧客向けに提供される有償の追加サービスで、別途料金が必要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 403,
+    "question": "AWS Cost AnomalyDetectionのアラート送信において、追加料金が発生するケースはどれですか？",
+    "options": [
+      "異常検出の処理",
+      "SNS経由でのアラート送信",
+      "レポート生成",
+      "すべて無料"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cost Anomaly Detection自体は無料ですが、アラート送信にSNSを使用する場合は、SNSの標準料金（メッセージ送信料金）が発生します。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 404,
+    "question": "AWS Cost and Usage ReportをAthenaで分析する際の料金構成として正しくないものはどれですか？",
+    "options": [
+      "Athenaのクエリ実行料金",
+      "S3のストレージ料金",
+      "CURレポート生成料金",
+      "Glueデータカタログ料金"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cost and Usage Reportの生成自体は無料です。分析時にはS3ストレージ、Athenaクエリ実行、Glueカタログなどの料金が発生します。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 405,
+    "question": "Cost Allocation Tagsを有効化する際の重要な注意点はどれですか？",
+    "options": [
+      "有効化後すぐに請求書に反映される",
+      "有効化後、次の月の請求から反映される",
+      "既存のリソースには適用されない",
+      "無料タグには適用されない"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cost Allocation Tagsを有効化しても、請求データへの反映は次の月の請求期間から開始されます。すぐには反映されません。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 406,
+    "question": "Reserved Instance Marketplaceでの売却において、売却可能なRIの条件として正しくないものはどれですか？",
+    "options": [
+      "アクティブ状態であること",
+      "購入から30日以上経過していること",
+      "前払い済みであること",
+      "同一リージョン内での売却のみ"
+    ],
+    "correctAnswer": 3,
+    "explanation": "RI Marketplaceでの売却は、リージョンに関係なく全世界のAWSユーザーに対して可能です。アクティブ、30日経過、前払い済みが主な条件です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 407,
+    "question": "AWS Price List APIで取得できる情報として正しくないものはどれですか？",
+    "options": [
+      "現在の価格情報",
+      "価格の有効期間",
+      "将来の価格変更予定",
+      "サービス別の価格属性"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Price List APIでは現在有効な価格情報を取得できますが、将来の価格変更予定や予告は含まれません。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 408,
+    "question": "Amazon ECS on Fargateの料金計算において、課金対象とならない時間はどれですか？",
+    "options": [
+      "コンテナイメージのpull時間",
+      "タスク起動準備時間",
+      "コンテナ実行時間",
+      "すべて課金対象"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Fargateでは、コンテナイメージのpull時間とタスク起動準備時間は課金対象外で、実際のタスク実行時間のみが課金対象となります。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 409,
+    "question": "AWS Trusted Advisorの「コスト最適化」カテゴリで確認できない項目はどれですか？",
+    "options": [
+      "未使用のEBSボリューム",
+      "低使用率のEC2インスタンス",
+      "未接続のElastic IPアドレス",
+      "Lambda関数のメモリ最適化"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Trusted Advisorは基本的なコスト最適化項目（未使用リソース、低使用率リソース等）を確認できますが、Lambda関数の詳細なメモリ最適化はCompute Optimizerが担当します。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 410,
+    "question": "VPCエンドポイントの利用によるコスト削減効果として最も大きいものはどれですか？",
+    "options": [
+      "VPCエンドポイント自体の料金削減",
+      "NAT Gatewayのデータ処理料金削減",
+      "EC2インスタンスの実行料金削減",
+      "S3ストレージ料金削減"
+    ],
+    "correctAnswer": 1,
+    "explanation": "VPCエンドポイントを使用することで、NAT Gatewayを経由せずにAWSサービスにアクセスでき、NAT Gatewayのデータ処理料金（$0.045/GB）を削減できます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 411,
+    "question": "Auto Scalingによるコスト最適化において、最も効果的な設定はどれですか？",
+    "options": [
+      "最大容量を常に高く設定",
+      "最小容量を0に設定",
+      "メトリクスベースのスケーリングポリシー設定",
+      "手動スケーリングのみ実行"
+    ],
+    "correctAnswer": 2,
+    "explain": "CPU使用率、メモリ使用率、リクエスト数などのメトリクスに基づいてスケーリングポリシーを設定することで、需要に応じた自動調整によりコストを最適化できます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy", 
+    "answer": 2
+  },
+  {
+    "id": 412,
+    "question": "AWS Billing and Cost Managementダッシュボードで確認できない情報はどれですか？",
+    "options": [
+      "月次のコスト推移",
+      "サービス別の使用量",
+      "他社クラウドサービスとの価格比較",
+      "前年同期比較"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWSのBilling and Cost Managementダッシュボードでは、AWS関連のコストと使用量のみ表示され、他社クラウドサービスとの価格比較は含まれません。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 413,
+    "question": "Amazon CloudWatch Logsの料金体系において、最もコストに影響する要素はどれですか？",
+    "options": [
+      "ログ取り込み量",
+      "ログ保存期間",
+      "ログ検索頻度",
+      "ログエクスポート量"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CloudWatch Logsでは、ログデータの取り込み量（データ ingestion）が最もコストに影響し、GBあたりの料金が設定されています。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 414,
+    "question": "Amazon RDS Performance Insightsの料金モデルとして正しいものはどれですか？",
+    "options": [
+      "完全無料",
+      "7日間無料、それ以降は有料",
+      "月額固定料金",
+      "分析クエリ数による従量課金"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Performance Insightsは7日間の履歴は無料で、それ以降の長期履歴（最大2年）は有料となる段階的な料金モデルです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 415,
+    "question": "AWS Application Load Balancer（ALB）のTarget Groupにおける「健全性チェック」の料金はどれですか？",
+    "options": [
+      "無料",
+      "チェック回数による従量課金",
+      "月額固定料金",
+      "ターゲット数による課金"
+    ],
+    "correctAnswer": 0,
+    "explanation": "ALBの健全性チェック（ヘルスチェック）は追加料金なしで提供される機能です。ALBの基本的な料金に含まれています。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 416,
+    "question": "AWS Cost OptimizationHubで表示される推奨事項の実装における責任範囲はどれですか？",
+    "options": [
+      "AWSが自動実装",
+      "顧客が手動実装",
+      "第三者ベンダーが実装",
+      "推奨事項の表示のみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cost Optimization Hubは推奨事項を提供しますが、実際の最適化の実装は顧客の責任で行う必要があります。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 417,
+    "question": "Amazon S3の「Intelligent-Tiering」の監視とオートメーション料金はどれですか？",
+    "options": [
+      "無料",
+      "オブジェクト数に応じた月額料金",
+      "データ転送量による課金",
+      "ストレージ容量による課金"
+    ],
+    "correctAnswer": 1,
+    "explanation": "S3 Intelligent-Tieringでは、自動階層化の監視とオートメーションのために1,000オブジェクトあたり月額$0.0025の料金が発生します。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 418,
+    "question": "AWS Savings Plansにおける「Partial Upfront」支払いオプションの特徴はどれですか？",
+    "options": [
+      "契約時に全額支払い、月額料金なし",
+      "契約時に一部支払い、残りは月額課金",
+      "月額料金のみ、前払いなし",
+      "年額一括支払いのみ"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Partial Upfrontでは、契約時に約50%を前払いし、残りの約50%を月額で支払う支払いオプションです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 419,
+    "question": "AWS BudgetsのReservation Budgetで監視できるメトリクスとして正しくないものはどれですか？",
+    "options": [
+      "RI使用率",
+      "RI使用量",
+      "RIコスト",
+      "RI転売価格"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Reservation Budgetでは、リザーブドインスタンスの使用率、使用量、コストを監視できますが、RI Marketplaceでの転売価格は監視対象外です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 420,
+    "question": "AWS Cost ExplorerのAPIアクセスにおける料金体系はどれですか？",
+    "options": [
+      "完全無料",
+      "API呼び出し回数による従量課金",
+      "月額固定料金",
+      "データ量による課金"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cost Explorer APIは、1回のAPI呼び出しあたり$0.01の従量課金制で、プログラム的にコストデータにアクセスする際に料金が発生します。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
   }
 ]
