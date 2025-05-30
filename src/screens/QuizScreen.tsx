@@ -173,7 +173,7 @@ export default function QuizScreen({ navigation, route }: Props) {
       return () => {
         isMounted.current = false;
       };
-    }, [mode, domainFilter, questionId, questionHistory, settings.shuffleOptions])
+    }, [mode, domainFilter, questionId, settings.shuffleOptions])
   );
   
   const loadQuestions = useCallback(() => {
@@ -200,15 +200,20 @@ export default function QuizScreen({ navigation, route }: Props) {
         filteredQuestions = filteredQuestions.filter(q => q.id === questionId);
       }
       
-      if (settings.shuffleOptions && mode !== 'single') {
+      if (settings.shuffleOptions) {
         filteredQuestions = [...filteredQuestions].sort(() => Math.random() - 0.5);
       }
-      
-      if (mode === 'single' && !questionId) {
-        const randomIndex = Math.floor(Math.random() * filteredQuestions.length);
-        filteredQuestions = [filteredQuestions[randomIndex]];
+
+      if (mode === 'single') {
+        if (questionId) {
+          filteredQuestions = filteredQuestions.slice(0, 1);
+        } else {
+          filteredQuestions = filteredQuestions.slice(0, 10);
+        }
       } else if (mode === 'domain') {
-        filteredQuestions = filteredQuestions.slice(0, 5);
+        filteredQuestions = filteredQuestions.slice(0, 10);
+      } else if (mode === 'full') {
+        filteredQuestions = filteredQuestions.slice(0, 10);
       }
       
       if (isMounted.current) {
@@ -227,7 +232,7 @@ export default function QuizScreen({ navigation, route }: Props) {
         Alert.alert('エラー', '問題の読み込み中にエラーが発生しました。');
       }
     }
-  }, [mode, domainFilter, questionId, questionHistory, settings.shuffleOptions]);
+  }, [mode, domainFilter, questionId, settings.shuffleOptions]);
 
   useEffect(() => {
     if (questions.length > 0 && currentQuestionIndex < questions.length) {

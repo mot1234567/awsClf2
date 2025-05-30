@@ -12,9 +12,7 @@ import {
 
 const DEFAULT_SETTINGS: AppSettings = {
   showExplanationImmediately: true,
-  shuffleOptions: true,
-  darkMode: false,
-  fontSize: 'medium'
+  shuffleOptions: true
 };
 
 const DEFAULT_USER_PROGRESS: UserProgress = {
@@ -25,7 +23,7 @@ const DEFAULT_USER_PROGRESS: UserProgress = {
   domainProgress: {
     'Cloud Concepts': { answered: 0, correct: 0, total: 0 },
     'Technology': { answered: 0, correct: 0, total: 0 },
-    'Security': { answered: 0, correct: 0, total: 0 },
+    'Security and Compliance': { answered: 0, correct: 0, total: 0 },
     'Billing and Pricing': { answered: 0, correct: 0, total: 0 }
   },
   mockExamHistory: []

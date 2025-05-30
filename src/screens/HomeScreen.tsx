@@ -13,7 +13,7 @@ type Props = {
 const domains = [
   { id: 'cloud-concepts', name: 'クラウドの概念' },
   { id: 'technology', name: 'テクノロジー' },
-  { id: 'security', name: 'セキュリティ' },
+  { id: 'security', name: 'セキュリティとコンプライアンス' },
   { id: 'billing-pricing', name: '請求と料金' }
 ];
 
@@ -30,7 +30,6 @@ export default function HomeScreen({ navigation }: Props) {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>AWS CLF 試験対策アプリ</Text>
-        <Text style={styles.subtitle}>23歳東京在住AWSエンジニア向け</Text>
       </View>
       
       {!isLoading && (

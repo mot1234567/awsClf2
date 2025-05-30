@@ -12,6 +12,7 @@ import BookmarksScreen from '../screens/BookmarksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import MockExamScreen from '../screens/MockExamScreen';
 import MockExamResultScreen from '../screens/MockExamResultScreen';
+import ContactScreen from '../screens/ContactScreen';
 
 import { RootStackParamList, RootTabParamList } from '../types';
 
@@ -87,10 +88,15 @@ const BookmarksStack = () => {
 const SettingsStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen 
-        name="Settings" 
-        component={SettingsScreen} 
-        options={{ title: '設定' }} 
+      <Stack.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={{ title: '設定' }}
+      />
+      <Stack.Screen
+        name="Contact"
+        component={ContactScreen}
+        options={{ title: 'お問い合わせ' }}
       />
     </Stack.Navigator>
   );

@@ -1,6 +1,9 @@
 import React from 'react';
 import { StyleSheet, View, Text, Switch, TouchableOpacity, ScrollView, Alert } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack';
 import { useAppContext } from '../context/AppContext';
+import { RootStackParamList } from '../types';
 
 export default function SettingsScreen() {
   const { 
@@ -11,6 +14,8 @@ export default function SettingsScreen() {
     isLoading 
   } = useAppContext();
 
+  const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
+
   const handleToggleExplanation = () => {
     updateSettings({ showExplanationImmediately: !settings.showExplanationImmediately });
   };
@@ -19,13 +24,6 @@ export default function SettingsScreen() {
     updateSettings({ shuffleOptions: !settings.shuffleOptions });
   };
 
-  const handleToggleDarkMode = () => {
-    updateSettings({ darkMode: !settings.darkMode });
-  };
-
-  const handleFontSizeChange = (size: 'small' | 'medium' | 'large') => {
-    updateSettings({ fontSize: size });
-  };
 
   const handleResetProgress = () => {
     Alert.alert(
@@ -60,6 +58,10 @@ export default function SettingsScreen() {
         },
       ],
     );
+  };
+
+  const handleContactPress = () => {
+    navigation.navigate('Contact');
   };
 
   if (isLoading) {
@@ -106,75 +108,6 @@ export default function SettingsScreen() {
         </View>
       </View>
 
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>表示設定</Text>
-        
-        <View style={styles.settingRow}>
-          <View style={styles.settingTextContainer}>
-            <Text style={styles.settingLabel}>ダークモード</Text>
-            <Text style={styles.settingDescription}>
-              ダークカラーテーマを使用します
-            </Text>
-          </View>
-          <Switch
-            value={settings.darkMode}
-            onValueChange={handleToggleDarkMode}
-            trackColor={{ false: '#767577', true: '#81b0ff' }}
-            thumbColor={settings.darkMode ? '#0066cc' : '#f4f3f4'}
-          />
-        </View>
-        
-        <View style={styles.settingRow}>
-          <Text style={styles.settingLabel}>文字サイズ</Text>
-        </View>
-        
-        <View style={styles.fontSizeContainer}>
-          <TouchableOpacity
-            style={[
-              styles.fontSizeButton,
-              settings.fontSize === 'small' && styles.fontSizeButtonActive
-            ]}
-            onPress={() => handleFontSizeChange('small')}
-          >
-            <Text style={[
-              styles.fontSizeButtonText,
-              settings.fontSize === 'small' && styles.fontSizeButtonTextActive
-            ]}>
-              小
-            </Text>
-          </TouchableOpacity>
-          
-          <TouchableOpacity
-            style={[
-              styles.fontSizeButton,
-              settings.fontSize === 'medium' && styles.fontSizeButtonActive
-            ]}
-            onPress={() => handleFontSizeChange('medium')}
-          >
-            <Text style={[
-              styles.fontSizeButtonText,
-              settings.fontSize === 'medium' && styles.fontSizeButtonTextActive
-            ]}>
-              中
-            </Text>
-          </TouchableOpacity>
-          
-          <TouchableOpacity
-            style={[
-              styles.fontSizeButton,
-              settings.fontSize === 'large' && styles.fontSizeButtonActive
-            ]}
-            onPress={() => handleFontSizeChange('large')}
-          >
-            <Text style={[
-              styles.fontSizeButtonText,
-              settings.fontSize === 'large' && styles.fontSizeButtonTextActive
-            ]}>
-              大
-            </Text>
-          </TouchableOpacity>
-        </View>
-      </View>
 
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>データ管理</Text>
@@ -210,8 +143,8 @@ export default function SettingsScreen() {
         <TouchableOpacity style={styles.linkButton}>
           <Text style={styles.linkButtonText}>プライバシーポリシー</Text>
         </TouchableOpacity>
-        
-        <TouchableOpacity style={styles.linkButton}>
+
+        <TouchableOpacity style={styles.linkButton} onPress={handleContactPress}>
           <Text style={styles.linkButtonText}>お問い合わせ</Text>
         </TouchableOpacity>
       </View>
@@ -263,30 +196,6 @@ const styles = StyleSheet.create({
   settingDescription: {
     fontSize: 12,
     color: '#666',
-  },
-  fontSizeContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 10,
-  },
-  fontSizeButton: {
-    flex: 1,
-    padding: 10,
-    alignItems: 'center',
-    borderWidth: 1,
-    borderColor: '#ddd',
-    borderRadius: 4,
-    marginHorizontal: 5,
-  },
-  fontSizeButtonActive: {
-    backgroundColor: '#0066cc',
-    borderColor: '#0066cc',
-  },
-  fontSizeButtonText: {
-    color: '#333',
-  },
-  fontSizeButtonTextActive: {
-    color: 'white',
   },
   resetButton: {
     backgroundColor: '#dc3545',
