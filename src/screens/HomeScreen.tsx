@@ -128,10 +128,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
   },
-  subtitle: {
-    fontSize: 16,
-    color: '#666',
-  },
   progressCard: {
     backgroundColor: 'white',
     margin: 15,

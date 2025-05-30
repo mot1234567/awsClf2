@@ -6,12 +6,12 @@ import { useAppContext } from '../context/AppContext';
 import { RootStackParamList } from '../types';
 
 export default function SettingsScreen() {
-  const { 
-    settings, 
-    updateSettings, 
-    resetProgress, 
+  const {
+    settings,
+    updateSettings,
+    resetProgress,
     resetSettings,
-    isLoading 
+    isLoading
   } = useAppContext();
 
   const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
@@ -23,7 +23,6 @@ export default function SettingsScreen() {
   const handleToggleShuffle = () => {
     updateSettings({ shuffleOptions: !settings.shuffleOptions });
   };
-
 
   const handleResetProgress = () => {
     Alert.alert(
