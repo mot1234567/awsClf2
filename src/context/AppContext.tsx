@@ -12,9 +12,7 @@ import {
 
 const DEFAULT_SETTINGS: AppSettings = {
   showExplanationImmediately: true,
-  shuffleOptions: true,
-  darkMode: false,
-  fontSize: 'medium'
+  shuffleOptions: true
 };
 
 const DEFAULT_USER_PROGRESS: UserProgress = {
@@ -25,7 +23,7 @@ const DEFAULT_USER_PROGRESS: UserProgress = {
   domainProgress: {
     'Cloud Concepts': { answered: 0, correct: 0, total: 0 },
     'Technology': { answered: 0, correct: 0, total: 0 },
-    'Security': { answered: 0, correct: 0, total: 0 },
+    'Security and Compliance': { answered: 0, correct: 0, total: 0 },
     'Billing and Pricing': { answered: 0, correct: 0, total: 0 }
   },
   mockExamHistory: []
@@ -40,7 +38,7 @@ const initialState: AppState = {
 
 interface AppContextType extends AppState {
   bookmarkQuestion: (questionId: number, bookmarked: boolean) => Promise<void>;
-  updateQuestionHistory: (questionId: number, isCorrect: boolean) => Promise<void>;
+  updateQuestionHistory: (questionId: number, isCorrect: boolean, domain?: string) => Promise<void>;
   saveMockExamResult: (result: MockExamResult) => Promise<void>;
   updateSettings: (newSettings: Partial<AppSettings>) => Promise<void>;
   resetProgress: () => Promise<void>;
@@ -158,7 +156,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     }
   };
 
-  const updateQuestionHistory = async (questionId: number, isCorrect: boolean) => {
+  const updateQuestionHistory = async (questionId: number, isCorrect: boolean, domain?: string) => {
     try {
       const updatedHistory = { ...state.questionHistory };
       const currentDate = new Date().toISOString();
@@ -182,9 +180,16 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
 
       const updatedProgress = { ...state.userProgress };
       updatedProgress.totalQuestionsAnswered += 1;
-      
+
       if (isCorrect) {
         updatedProgress.totalCorrectAnswers += 1;
+      }
+
+      if (domain && updatedProgress.domainProgress[domain]) {
+        updatedProgress.domainProgress[domain].answered += 1;
+        if (isCorrect) {
+          updatedProgress.domainProgress[domain].correct += 1;
+        }
       }
 
       await AsyncStorage.setItem(STORAGE_KEYS.QUESTION_HISTORY, JSON.stringify(updatedHistory));

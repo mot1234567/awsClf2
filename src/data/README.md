@@ -41,7 +41,7 @@
 
 - "Cloud Concepts" (クラウドの概念)
 - "Technology" (テクノロジー)
-- "Security" (セキュリティ)
+- "Security and Compliance" (セキュリティとコンプライアンス)
 - "Billing and Pricing" (請求と料金)
 
 これらのドメインはAWS認定クラウドプラクティショナー試験の主要な分野に対応しています。
