@@ -1,20 +1,20 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { 
-  AppState, 
-  QuestionHistory, 
-  UserProgress, 
-  AppSettings, 
+import {
+  AppState,
+  QuestionHistory,
+  UserProgress,
+  AppSettings,
   STORAGE_KEYS,
   MockExamResult,
-  DomainMap
+  DomainMap,
+  Question
 } from '../types';
+import sampleQuestions from '../data/sampleQuestions.json';
 
 const DEFAULT_SETTINGS: AppSettings = {
   showExplanationImmediately: true,
-  shuffleOptions: true,
-  darkMode: false,
-  fontSize: 'medium'
+  shuffleOptions: true
 };
 
 const DEFAULT_USER_PROGRESS: UserProgress = {
@@ -25,7 +25,7 @@ const DEFAULT_USER_PROGRESS: UserProgress = {
   domainProgress: {
     'Cloud Concepts': { answered: 0, correct: 0, total: 0 },
     'Technology': { answered: 0, correct: 0, total: 0 },
-    'Security': { answered: 0, correct: 0, total: 0 },
+    'Security and Compliance': { answered: 0, correct: 0, total: 0 },
     'Billing and Pricing': { answered: 0, correct: 0, total: 0 }
   },
   mockExamHistory: []
@@ -60,7 +60,28 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
         const questionHistory = historyJson ? JSON.parse(historyJson) : {};
 
         const progressJson = await AsyncStorage.getItem(STORAGE_KEYS.USER_PROGRESS);
-        const userProgress = progressJson ? JSON.parse(progressJson) : DEFAULT_USER_PROGRESS;
+        let userProgress = progressJson ? JSON.parse(progressJson) : DEFAULT_USER_PROGRESS;
+
+        const domainCounts: Record<string, number> = {};
+        (sampleQuestions as Question[]).forEach(q => {
+          domainCounts[q.domain] = (domainCounts[q.domain] || 0) + 1;
+        });
+
+        userProgress = {
+          ...userProgress,
+          domainProgress: {
+            ...userProgress.domainProgress,
+            ...Object.fromEntries(
+              Object.entries(domainCounts).map(([domain, count]) => [
+                domain,
+                {
+                  ...(userProgress.domainProgress[domain] || { answered: 0, correct: 0, total: 0 }),
+                  total: count,
+                },
+              ])
+            ),
+          },
+        } as UserProgress;
 
         const settingsJson = await AsyncStorage.getItem(STORAGE_KEYS.SETTINGS);
         const settings = settingsJson ? JSON.parse(settingsJson) : DEFAULT_SETTINGS;

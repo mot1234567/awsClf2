@@ -12,7 +12,7 @@ export interface Question {
 export const DomainMap: Record<string, string> = {
   'cloud-concepts': 'Cloud Concepts',
   'technology': 'Technology',
-  'security': 'Security',
+  'security': 'Security and Compliance',
   'billing-pricing': 'Billing and Pricing'
 };
 
@@ -41,8 +41,6 @@ export interface MockExamResult {
 export interface AppSettings {
   showExplanationImmediately: boolean;
   shuffleOptions: boolean;
-  darkMode: boolean;
-  fontSize: 'small' | 'medium' | 'large';
 }
 
 export interface UserProgress {
@@ -95,6 +93,7 @@ export type RootStackParamList = {
   Statistics: undefined;
   Bookmarks: undefined;
   Settings: undefined;
+  Contact: undefined;
 };
 
 export type RootTabParamList = {

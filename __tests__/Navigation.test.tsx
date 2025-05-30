@@ -4,24 +4,29 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import Navigation from '../src/navigation';
 import { NavigationContainer } from '@react-navigation/native';
 
-jest.mock('../src/context/AppContext', () => ({
-  useAppContext: () => ({
-    questionHistory: {},
-    settings: {
-      showExplanationImmediately: true,
-      shuffleOptions: false,
-    },
-    bookmarkQuestion: jest.fn(),
-    updateQuestionHistory: jest.fn(),
-  }),
-  AppProvider: ({ children }: { children: React.ReactNode }) => <>{children}</>,
-}));
+jest.mock('../src/context/AppContext', () => {
+  const React = require('react');
+  return {
+    useAppContext: () => ({
+      questionHistory: {},
+      settings: {
+        showExplanationImmediately: true,
+        shuffleOptions: false,
+      },
+      bookmarkQuestion: jest.fn(),
+      updateQuestionHistory: jest.fn(),
+    }),
+    AppProvider: ({ children }: { children: React.ReactNode }) => <>{children}</>,
+  };
+});
 
 jest.mock('../src/screens/HomeScreen', () => {
+  const React = require('react');
+  const { View, Text, TouchableOpacity } = require('react-native');
   return function MockHomeScreen({ navigation }: any) {
     return (
       <View testID="home-screen">
-        <TouchableOpacity 
+        <TouchableOpacity
           testID="navigate-to-quiz"
           onPress={() => navigation.navigate('Quiz', { mode: 'single' })}
         >
@@ -33,10 +38,12 @@ jest.mock('../src/screens/HomeScreen', () => {
 });
 
 jest.mock('../src/screens/QuizScreen', () => {
+  const React = require('react');
+  const { View, Text, TouchableOpacity } = require('react-native');
   return function MockQuizScreen({ navigation }: any) {
     return (
       <View testID="quiz-screen">
-        <TouchableOpacity 
+        <TouchableOpacity
           testID="navigate-to-result"
           onPress={() => navigation.navigate('Result', { score: 5, total: 10 })}
         >
@@ -48,10 +55,12 @@ jest.mock('../src/screens/QuizScreen', () => {
 });
 
 jest.mock('../src/screens/ResultScreen', () => {
+  const React = require('react');
+  const { View, Text, TouchableOpacity } = require('react-native');
   return function MockResultScreen({ navigation }: any) {
     return (
       <View testID="result-screen">
-        <TouchableOpacity 
+        <TouchableOpacity
           testID="navigate-to-home"
           onPress={() => navigation.navigate('Home')}
         >
