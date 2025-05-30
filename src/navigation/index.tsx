@@ -10,6 +10,7 @@ import ResultScreen from '../screens/ResultScreen';
 import StatisticsScreen from '../screens/StatisticsScreen';
 import BookmarksScreen from '../screens/BookmarksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import ContactScreen from '../screens/ContactScreen';
 import MockExamScreen from '../screens/MockExamScreen';
 import MockExamResultScreen from '../screens/MockExamResultScreen';
 import ContactScreen from '../screens/ContactScreen';

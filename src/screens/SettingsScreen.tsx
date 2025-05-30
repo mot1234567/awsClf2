@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../types';
 import { useAppContext } from '../context/AppContext';
+import { RootStackParamList } from '../types';
 
 export default function SettingsScreen() {
   const {
@@ -23,7 +24,6 @@ export default function SettingsScreen() {
   const handleToggleShuffle = () => {
     updateSettings({ shuffleOptions: !settings.shuffleOptions });
   };
-
 
   const handleResetProgress = () => {
     Alert.alert(
@@ -105,7 +105,6 @@ export default function SettingsScreen() {
       </View>
 
 
-
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>データ管理</Text>
         
@@ -140,7 +139,6 @@ export default function SettingsScreen() {
         <TouchableOpacity style={styles.linkButton}>
           <Text style={styles.linkButtonText}>プライバシーポリシー</Text>
         </TouchableOpacity>
-        
         <TouchableOpacity
           style={styles.linkButton}
           onPress={() => navigation.navigate('Contact')}
