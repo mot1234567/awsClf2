@@ -1,72 +1,7262 @@
 [
   {
     "id": 1,
-    "question": "Which AWS service is used to store objects and is designed for 99.999999999% (11 9's) of durability?",
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 2,
+    "question": "次の AWS サービスのうち、仮想ネットワークをプロビジョニングし制御するサービスはどれですか？",
+    "options": [
+      "Amazon VPC",
+      "Amazon Route 53",
+      "Amazon S3",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 3,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 4,
+    "question": "次の AWS サービスのうち、イベント駆動型のサーバーレスコンピューティングを提供するサービスはどれですか？",
+    "options": [
+      "Amazon SQS",
+      "Amazon EC2",
+      "AWS Lambda",
+      "Amazon Redshift"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 5,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 6,
+    "question": "次の AWS サービスのうち、フルマネージドな NFS 互換のファイルシステムを提供するサービスはどれですか？",
+    "options": [
+      "AWS Cost Explorer",
+      "Elastic Load Balancing",
+      "AWS KMS",
+      "Amazon EFS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 7,
+    "question": "次の AWS サービスのうち、DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスはどれですか？",
+    "options": [
+      "Amazon Route 53",
+      "Amazon Aurora",
+      "AWS Cost Explorer",
+      "Amazon SQS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Route 53 は DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 8,
+    "question": "どの AWS サービスがベストプラクティスに基づくリソース最適化の推奨を提供する提供しますか？",
+    "options": [
+      "AWS Trusted Advisor",
+      "AWS WAF",
+      "Amazon DynamoDB",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Trusted Advisor は ベストプラクティスに基づくリソース最適化の推奨を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 9,
+    "question": "どの AWS サービスがAWS アカウントの API コールを記録し監査ログを提供する提供しますか？",
+    "options": [
+      "Elastic Load Balancing",
+      "AWS Cost Explorer",
+      "AWS CloudTrail",
+      "Amazon Redshift"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 10,
+    "question": "フルマネージドな NoSQL データベースを提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon RDS",
+      "Amazon SNS",
+      "AWS CloudTrail",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon DynamoDB は フルマネージドな NoSQL データベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 11,
+    "question": "どの AWS サービスがDDoS 攻撃からアプリケーションを保護する提供しますか？",
+    "options": [
+      "AWS Budgets",
+      "AWS Shield",
+      "Amazon Route 53",
+      "Elastic Load Balancing"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Shield は DDoS 攻撃からアプリケーションを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 12,
+    "question": "コストの可視化と分析を行うAWS サービスはどれですか？",
+    "options": [
+      "Amazon SQS",
+      "Amazon Aurora",
+      "AWS Cost Explorer",
+      "AWS WAF"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Cost Explorer は コストの可視化と分析を行うサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 13,
+    "question": "次の AWS サービスのうち、AWS リソースの設定変更を記録しコンプライアンスを評価するサービスはどれですか？",
+    "options": [
+      "AWS Shield",
+      "Amazon CloudFront",
+      "Amazon EC2",
+      "AWS Config"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 14,
+    "question": "どの AWS サービスがマネージドキー管理サービスを提供する提供しますか？",
+    "options": [
+      "Elastic Load Balancing",
+      "AWS Direct Connect",
+      "Amazon EBS",
+      "AWS KMS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 15,
+    "question": "DNS ウェブサービスとしてドメイン名を管理しルーティングを行うAWS サービスはどれですか？",
+    "options": [
+      "Amazon CloudFront",
+      "AWS Trusted Advisor",
+      "Amazon Route 53",
+      "AWS KMS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon Route 53 は DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 16,
+    "question": "どの AWS サービスがウェブアプリケーションファイアウォールとして HTTP/HTTPS トラフィックを保護する提供しますか？",
+    "options": [
+      "Amazon RDS",
+      "AWS IAM",
+      "Amazon CloudFront",
+      "AWS WAF"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS WAF は ウェブアプリケーションファイアウォールとして HTTP/HTTPS トラフィックを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 17,
+    "question": "フルマネージドなリレーショナルデータベースを提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon RDS",
+      "Amazon VPC",
+      "Amazon SQS",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon RDS は フルマネージドなリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 18,
+    "question": "どの AWS サービスがメッセージキューイングサービスを提供する提供しますか？",
+    "options": [
+      "Amazon SQS",
+      "Amazon S3",
+      "AWS Budgets",
+      "AWS KMS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon SQS は メッセージキューイングサービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 19,
+    "question": "ベストプラクティスに基づくリソース最適化の推奨を提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS Lambda",
+      "Amazon EFS",
+      "AWS Trusted Advisor",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Trusted Advisor は ベストプラクティスに基づくリソース最適化の推奨を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 20,
+    "question": "DDoS 攻撃からアプリケーションを保護するAWS サービスはどれですか？",
+    "options": [
+      "AWS Shield",
+      "AWS KMS",
+      "AWS IAM",
+      "Amazon S3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Shield は DDoS 攻撃からアプリケーションを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 21,
+    "question": "アクセス管理と認証を提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS IAM",
+      "AWS CloudTrail",
+      "AWS WAF"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS IAM は アクセス管理と認証を提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 22,
+    "question": "グローバル CDN としてコンテンツを高速配信するAWS サービスはどれですか？",
+    "options": [
+      "Amazon CloudFront",
+      "Amazon DynamoDB",
+      "Amazon S3",
+      "AWS Shield"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 23,
+    "question": "次の AWS サービスのうち、フルマネージドな NoSQL データベースを提供するサービスはどれですか？",
+    "options": [
+      "AWS Lambda",
+      "Amazon DynamoDB",
+      "Amazon Route 53",
+      "Amazon EC2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon DynamoDB は フルマネージドな NoSQL データベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 24,
+    "question": "オンプレミスと AWS を専用線で接続するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon RDS",
+      "AWS IAM",
+      "Elastic Load Balancing",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 25,
+    "question": "次の AWS サービスのうち、受信したアプリケーショントラフィックを複数のターゲットに分散するサービスはどれですか？",
+    "options": [
+      "AWS Lambda",
+      "Elastic Load Balancing",
+      "AWS Budgets",
+      "Amazon SQS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Elastic Load Balancing は 受信したアプリケーショントラフィックを複数のターゲットに分散するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 26,
+    "question": "次の AWS サービスのうち、コストの可視化と分析を行うサービスはどれですか？",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS Lambda",
+      "Amazon VPC",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Cost Explorer は コストの可視化と分析を行うサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 27,
+    "question": "メッセージキューイングサービスを提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "AWS KMS",
+      "Amazon SQS",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon SQS は メッセージキューイングサービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 28,
+    "question": "高いパフォーマンスと可用性を持つリレーショナルデータベースを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon S3",
+      "AWS CloudTrail",
+      "Amazon SNS",
+      "Amazon Aurora"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon Aurora は 高いパフォーマンスと可用性を持つリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 29,
+    "question": "コストの可視化と分析を行うために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS CloudTrail",
+      "Amazon RDS",
+      "Elastic Load Balancing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Cost Explorer は コストの可視化と分析を行うサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 30,
+    "question": "次の AWS サービスのうち、フルマネージドなデータウェアハウスを提供するサービスはどれですか？",
+    "options": [
+      "Amazon Redshift",
+      "Amazon VPC",
+      "Amazon DynamoDB",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Redshift は フルマネージドなデータウェアハウスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 31,
+    "question": "どの AWS サービスがコストおよび使用量の予算を設定しアラートを送る提供しますか？",
+    "options": [
+      "Amazon CloudFront",
+      "AWS Budgets",
+      "AWS WAF",
+      "Amazon Route 53"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Budgets は コストおよび使用量の予算を設定しアラートを送るサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 32,
+    "question": "どの AWS サービスがアクセス管理と認証を提供する提供しますか？",
+    "options": [
+      "AWS IAM",
+      "AWS Direct Connect",
+      "Amazon EFS",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS IAM は アクセス管理と認証を提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 33,
+    "question": "イベント駆動型のサーバーレスコンピューティングを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS CloudTrail",
+      "AWS Trusted Advisor",
+      "AWS Lambda",
+      "Amazon RDS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 34,
+    "question": "どの AWS サービスが受信したアプリケーショントラフィックを複数のターゲットに分散する提供しますか？",
+    "options": [
+      "Amazon CloudFront",
+      "AWS Budgets",
+      "Elastic Load Balancing",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Elastic Load Balancing は 受信したアプリケーショントラフィックを複数のターゲットに分散するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 35,
+    "question": "次の AWS サービスのうち、仮想サーバーをクラウドで提供するサービスはどれですか？",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon SQS",
+      "Amazon EC2",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 36,
+    "question": "どの AWS サービスが仮想ネットワークをプロビジョニングし制御する提供しますか？",
+    "options": [
+      "AWS Trusted Advisor",
+      "Amazon Aurora",
+      "Amazon SQS",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 37,
+    "question": "ベストプラクティスに基づくリソース最適化の推奨を提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Trusted Advisor",
+      "Amazon RDS",
+      "Amazon Redshift",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Trusted Advisor は ベストプラクティスに基づくリソース最適化の推奨を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 38,
+    "question": "オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon SQS",
+      "AWS Trusted Advisor",
+      "Amazon S3",
+      "AWS Shield"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 39,
+    "question": "イベント駆動型のサーバーレスコンピューティングを提供するために使用する AWS サービスはどれでしょうか？",
     "options": [
       "Amazon EC2",
+      "Amazon Route 53",
+      "AWS Lambda",
+      "Amazon EFS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 40,
+    "question": "どの AWS サービスがイベント駆動型のサーバーレスコンピューティングを提供する提供しますか？",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon Redshift",
+      "AWS Lambda",
+      "Elastic Load Balancing"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 41,
+    "question": "どの AWS サービスがコストの可視化と分析を行う提供しますか？",
+    "options": [
+      "Amazon EFS",
+      "AWS Cost Explorer",
+      "Amazon Redshift",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Cost Explorer は コストの可視化と分析を行うサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 42,
+    "question": "仮想サーバーをクラウドで提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
       "Amazon S3",
+      "AWS KMS",
+      "Amazon EC2",
+      "AWS IAM"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 43,
+    "question": "どの AWS サービスがオンプレミスと AWS を専用線で接続する提供しますか？",
+    "options": [
+      "AWS Direct Connect",
+      "AWS Config",
+      "AWS Budgets",
+      "Amazon Redshift"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 44,
+    "question": "AWS アカウントの API コールを記録し監査ログを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon SNS",
+      "AWS Shield",
+      "AWS CloudTrail",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 45,
+    "question": "メッセージング／通知サービスを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon SNS",
+      "AWS Budgets",
+      "AWS Trusted Advisor",
+      "Amazon Aurora"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon SNS は メッセージング／通知サービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 46,
+    "question": "AWS アカウントの API コールを記録し監査ログを提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon SQS",
+      "AWS CloudTrail",
+      "Amazon Redshift",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 47,
+    "question": "オンプレミスと AWS を専用線で接続するAWS サービスはどれですか？",
+    "options": [
+      "AWS Direct Connect",
+      "Amazon EFS",
+      "AWS Trusted Advisor",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 48,
+    "question": "どの AWS サービスがフルマネージドな NFS 互換のファイルシステムを提供する提供しますか？",
+    "options": [
+      "Amazon CloudFront",
+      "Amazon EFS",
+      "Amazon DynamoDB",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 49,
+    "question": "次の AWS サービスのうち、オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスはどれですか？",
+    "options": [
+      "Amazon S3",
+      "Amazon VPC",
+      "Amazon EFS",
+      "Amazon Route 53"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 50,
+    "question": "マネージドキー管理サービスを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS WAF",
+      "Amazon EBS",
+      "AWS Cost Explorer",
+      "AWS KMS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 51,
+    "question": "次の AWS サービスのうち、コストおよび使用量の予算を設定しアラートを送るサービスはどれですか？",
+    "options": [
+      "AWS Lambda",
+      "AWS Budgets",
+      "Amazon CloudFront",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Budgets は コストおよび使用量の予算を設定しアラートを送るサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 52,
+    "question": "フルマネージドなデータウェアハウスを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS IAM",
+      "Amazon Aurora",
+      "Amazon SQS",
+      "Amazon Redshift"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon Redshift は フルマネージドなデータウェアハウスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 53,
+    "question": "AWS リソースの設定変更を記録しコンプライアンスを評価するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Elastic Load Balancing",
+      "Amazon SQS",
+      "Amazon EC2",
+      "AWS Config"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 54,
+    "question": "ウェブアプリケーションファイアウォールとして HTTP/HTTPS トラフィックを保護するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon S3",
+      "AWS Shield",
+      "AWS WAF"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS WAF は ウェブアプリケーションファイアウォールとして HTTP/HTTPS トラフィックを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 55,
+    "question": "どの AWS サービスがグローバル CDN としてコンテンツを高速配信する提供しますか？",
+    "options": [
+      "Amazon SQS",
+      "Amazon S3",
+      "Amazon EFS",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 56,
+    "question": "仮想ネットワークをプロビジョニングし制御するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon VPC",
+      "Amazon Aurora",
+      "Amazon SQS",
+      "Amazon RDS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 57,
+    "question": "受信したアプリケーショントラフィックを複数のターゲットに分散するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS CloudTrail",
+      "AWS Shield",
+      "Amazon SNS",
+      "Elastic Load Balancing"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Elastic Load Balancing は 受信したアプリケーショントラフィックを複数のターゲットに分散するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 58,
+    "question": "次の AWS サービスのうち、AWS アカウントの API コールを記録し監査ログを提供するサービスはどれですか？",
+    "options": [
+      "AWS Config",
+      "Amazon Redshift",
+      "Amazon S3",
+      "AWS CloudTrail"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 59,
+    "question": "アクセス管理と認証を提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS IAM",
+      "AWS Shield",
+      "AWS Budgets",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS IAM は アクセス管理と認証を提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 60,
+    "question": "次の AWS サービスのうち、グローバル CDN としてコンテンツを高速配信するサービスはどれですか？",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon EBS",
+      "Amazon Route 53",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 61,
+    "question": "オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Shield",
+      "Amazon EFS",
+      "Amazon S3",
+      "Elastic Load Balancing"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 62,
+    "question": "どの AWS サービスがDNS ウェブサービスとしてドメイン名を管理しルーティングを行う提供しますか？",
+    "options": [
+      "Amazon Route 53",
+      "AWS IAM",
+      "AWS KMS",
+      "Amazon S3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Route 53 は DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 63,
+    "question": "どの AWS サービスがオブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供する提供しますか？",
+    "options": [
+      "AWS Shield",
+      "Amazon S3",
+      "Amazon EFS",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 64,
+    "question": "次の AWS サービスのうち、アクセス管理と認証を提供するサービスはどれですか？",
+    "options": [
+      "Amazon Aurora",
+      "Amazon S3",
+      "Amazon SNS",
+      "AWS IAM"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS IAM は アクセス管理と認証を提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 65,
+    "question": "仮想サーバーをクラウドで提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS Cost Explorer",
+      "Amazon EC2",
+      "Amazon EBS",
+      "AWS Config"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 66,
+    "question": "仮想ネットワークをプロビジョニングし制御するAWS サービスはどれですか？",
+    "options": [
+      "Amazon VPC",
+      "Amazon SNS",
+      "AWS IAM",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 67,
+    "question": "次の AWS サービスのうち、フルマネージドなリレーショナルデータベースを提供するサービスはどれですか？",
+    "options": [
+      "Amazon RDS",
+      "Amazon EC2",
+      "Elastic Load Balancing",
+      "AWS Config"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon RDS は フルマネージドなリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 68,
+    "question": "次の AWS サービスのうち、オンプレミスと AWS を専用線で接続するサービスはどれですか？",
+    "options": [
+      "AWS KMS",
+      "Amazon Route 53",
+      "AWS Direct Connect",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 69,
+    "question": "どの AWS サービスがブロックストレージを提供し EC2 に接続できる提供しますか？",
+    "options": [
+      "AWS Budgets",
+      "AWS Config",
+      "Amazon EBS",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon EBS は ブロックストレージを提供し EC2 に接続できるサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 70,
+    "question": "コストおよび使用量の予算を設定しアラートを送るために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS WAF",
+      "AWS Budgets",
+      "AWS Direct Connect",
+      "AWS CloudTrail"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Budgets は コストおよび使用量の予算を設定しアラートを送るサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 71,
+    "question": "受信したアプリケーショントラフィックを複数のターゲットに分散するAWS サービスはどれですか？",
+    "options": [
+      "Amazon DynamoDB",
+      "AWS CloudTrail",
+      "Elastic Load Balancing",
+      "Amazon SQS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Elastic Load Balancing は 受信したアプリケーショントラフィックを複数のターゲットに分散するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 72,
+    "question": "フルマネージドな NFS 互換のファイルシステムを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Trusted Advisor",
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon EFS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 73,
+    "question": "どの AWS サービスが仮想サーバーをクラウドで提供する提供しますか？",
+    "options": [
+      "AWS WAF",
+      "Amazon EC2",
+      "Amazon Aurora",
+      "Amazon SQS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 74,
+    "question": "次の AWS サービスのうち、DDoS 攻撃からアプリケーションを保護するサービスはどれですか？",
+    "options": [
+      "AWS Shield",
+      "Amazon Route 53",
+      "Amazon S3",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Shield は DDoS 攻撃からアプリケーションを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 75,
+    "question": "どの AWS サービスがメッセージング／通知サービスを提供する提供しますか？",
+    "options": [
+      "Amazon SNS",
+      "Amazon SQS",
+      "AWS WAF",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon SNS は メッセージング／通知サービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 76,
+    "question": "フルマネージドな NoSQL データベースを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon RDS",
+      "AWS WAF",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon DynamoDB は フルマネージドな NoSQL データベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 77,
+    "question": "グローバル CDN としてコンテンツを高速配信するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon CloudFront",
+      "Amazon VPC",
+      "AWS Budgets",
+      "AWS KMS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 78,
+    "question": "どの AWS サービスが高いパフォーマンスと可用性を持つリレーショナルデータベースを提供する提供しますか？",
+    "options": [
+      "AWS Config",
+      "Amazon Aurora",
+      "AWS Cost Explorer",
+      "AWS Shield"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Aurora は 高いパフォーマンスと可用性を持つリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 79,
+    "question": "マネージドキー管理サービスを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon RDS",
+      "AWS Trusted Advisor",
+      "AWS KMS",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 80,
+    "question": "メッセージキューイングサービスを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon EBS",
+      "Amazon EFS",
+      "Amazon VPC",
+      "Amazon SQS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon SQS は メッセージキューイングサービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 81,
+    "question": "フルマネージドなリレーショナルデータベースを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon RDS",
+      "AWS Cost Explorer",
+      "AWS KMS",
+      "Amazon Route 53"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon RDS は フルマネージドなリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 82,
+    "question": "次の AWS サービスのうち、メッセージキューイングサービスを提供するサービスはどれですか？",
+    "options": [
+      "Amazon SQS",
+      "Amazon EFS",
+      "Amazon EBS",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon SQS は メッセージキューイングサービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 83,
+    "question": "フルマネージドな NFS 互換のファイルシステムを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS WAF",
+      "AWS Shield",
+      "AWS CloudTrail",
+      "Amazon EFS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 84,
+    "question": "AWS リソースの設定変更を記録しコンプライアンスを評価するAWS サービスはどれですか？",
+    "options": [
+      "AWS Config",
+      "AWS Cost Explorer",
+      "AWS Trusted Advisor",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 85,
+    "question": "どの AWS サービスがフルマネージドなリレーショナルデータベースを提供する提供しますか？",
+    "options": [
+      "AWS Direct Connect",
+      "Amazon EC2",
+      "Amazon RDS",
+      "Amazon EFS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon RDS は フルマネージドなリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 86,
+    "question": "ブロックストレージを提供し EC2 に接続できるために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EBS は ブロックストレージを提供し EC2 に接続できるサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 87,
+    "question": "DDoS 攻撃からアプリケーションを保護するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Shield",
+      "AWS Direct Connect",
+      "Amazon EC2",
+      "Amazon Route 53"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Shield は DDoS 攻撃からアプリケーションを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 88,
+    "question": "どの AWS サービスがAWS リソースの設定変更を記録しコンプライアンスを評価する提供しますか？",
+    "options": [
+      "Amazon CloudFront",
+      "Amazon S3",
+      "AWS Config",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 89,
+    "question": "ブロックストレージを提供し EC2 に接続できるAWS サービスはどれですか？",
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon RDS",
+      "AWS Lambda",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EBS は ブロックストレージを提供し EC2 に接続できるサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 90,
+    "question": "高いパフォーマンスと可用性を持つリレーショナルデータベースを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS IAM",
+      "Amazon Route 53",
+      "Amazon Aurora",
+      "AWS WAF"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon Aurora は 高いパフォーマンスと可用性を持つリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 91,
+    "question": "次の AWS サービスのうち、ブロックストレージを提供し EC2 に接続できるサービスはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "AWS Shield",
+      "AWS KMS",
+      "Amazon Redshift"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon EBS は ブロックストレージを提供し EC2 に接続できるサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 92,
+    "question": "次の AWS サービスのうち、マネージドキー管理サービスを提供するサービスはどれですか？",
+    "options": [
+      "AWS KMS",
+      "AWS Direct Connect",
+      "AWS Config",
+      "Amazon RDS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 93,
+    "question": "メッセージング／通知サービスを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS Shield",
+      "Amazon Route 53",
+      "AWS Trusted Advisor",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon SNS は メッセージング／通知サービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 94,
+    "question": "フルマネージドなデータウェアハウスを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS Config",
+      "Amazon VPC",
+      "Amazon Aurora",
+      "Amazon Redshift"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon Redshift は フルマネージドなデータウェアハウスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 95,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 96,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 97,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 98,
+    "question": "次の AWS サービスのうち、DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスはどれですか？",
+    "options": [
+      "AWS KMS",
+      "Amazon Route 53",
+      "Amazon EBS",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Route 53 は DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 99,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 100,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 101,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 102,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 103,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 104,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 105,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 106,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 107,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 108,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 109,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 110,
+    "question": "次の AWS サービスのうち、AWS リソースの設定変更を記録しコンプライアンスを評価するサービスはどれですか？",
+    "options": [
+      "Amazon Aurora",
+      "Amazon SQS",
+      "AWS CloudTrail",
+      "AWS Config"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 111,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 112,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 113,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 114,
+    "question": "どの AWS サービスがDDoS 攻撃からアプリケーションを保護する提供しますか？",
+    "options": [
+      "Amazon Redshift",
+      "Amazon EC2",
+      "AWS Shield",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Shield は DDoS 攻撃からアプリケーションを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 115,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 116,
+    "question": "ベストプラクティスに基づくリソース最適化の推奨を提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon RDS",
+      "Amazon EBS",
+      "AWS Trusted Advisor",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Trusted Advisor は ベストプラクティスに基づくリソース最適化の推奨を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 117,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 118,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 119,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 120,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 121,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 122,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 123,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 124,
+    "question": "グローバル CDN としてコンテンツを高速配信するAWS サービスはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "Elastic Load Balancing",
+      "Amazon CloudFront",
+      "AWS KMS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 125,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 126,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 127,
+    "question": "ベストプラクティスに基づくリソース最適化の推奨を提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "Amazon SNS",
+      "Amazon Aurora",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Trusted Advisor は ベストプラクティスに基づくリソース最適化の推奨を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 128,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 129,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 130,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 131,
+    "question": "次の AWS サービスのうち、AWS リソースの設定変更を記録しコンプライアンスを評価するサービスはどれですか？",
+    "options": [
+      "AWS Config",
+      "Amazon EFS",
+      "Amazon EC2",
+      "Amazon Redshift"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 132,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 133,
+    "question": "次の AWS サービスのうち、フルマネージドな NoSQL データベースを提供するサービスはどれですか？",
+    "options": [
+      "Amazon Route 53",
+      "Amazon DynamoDB",
+      "Amazon SNS",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon DynamoDB は フルマネージドな NoSQL データベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 134,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 135,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 136,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 137,
+    "question": "次の AWS サービスのうち、AWS リソースの設定変更を記録しコンプライアンスを評価するサービスはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "Amazon VPC",
+      "AWS Config",
+      "Amazon S3"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 138,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 139,
+    "question": "DNS ウェブサービスとしてドメイン名を管理しルーティングを行うAWS サービスはどれですか？",
+    "options": [
+      "Amazon Route 53",
+      "AWS WAF",
+      "Amazon DynamoDB",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Route 53 は DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 140,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 141,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 142,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 143,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 144,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 145,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 146,
+    "question": "フルマネージドな NoSQL データベースを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS WAF",
+      "AWS KMS",
+      "Amazon DynamoDB",
+      "Amazon EC2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon DynamoDB は フルマネージドな NoSQL データベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 147,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 148,
+    "question": "どの AWS サービスがAWS アカウントの API コールを記録し監査ログを提供する提供しますか？",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon EC2",
+      "Elastic Load Balancing",
+      "AWS WAF"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 149,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 150,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 151,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 152,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 153,
+    "question": "グローバル CDN としてコンテンツを高速配信するAWS サービスはどれですか？",
+    "options": [
+      "Amazon S3",
+      "Elastic Load Balancing",
+      "AWS Budgets",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 154,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 155,
+    "question": "どの AWS サービスがベストプラクティスに基づくリソース最適化の推奨を提供する提供しますか？",
+    "options": [
+      "AWS Shield",
+      "Amazon VPC",
+      "Amazon EFS",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Trusted Advisor は ベストプラクティスに基づくリソース最適化の推奨を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 156,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 157,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 158,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 159,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 160,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 161,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 162,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 163,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 164,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 165,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 166,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 167,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 168,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 169,
+    "question": "アクセス管理と認証を提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS Lambda",
+      "Amazon SQS",
+      "Amazon RDS",
+      "AWS IAM"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS IAM は アクセス管理と認証を提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 170,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 171,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 172,
+    "question": "どの AWS サービスが仮想ネットワークをプロビジョニングし制御する提供しますか？",
+    "options": [
+      "Amazon EFS",
+      "AWS Direct Connect",
+      "Amazon VPC",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 173,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 174,
+    "question": "どの AWS サービスがコストおよび使用量の予算を設定しアラートを送る提供しますか？",
+    "options": [
+      "Amazon Route 53",
+      "Amazon CloudFront",
+      "AWS Budgets",
+      "AWS Config"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Budgets は コストおよび使用量の予算を設定しアラートを送るサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 175,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 176,
+    "question": "フルマネージドなリレーショナルデータベースを提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon Aurora",
+      "Amazon RDS",
+      "Amazon SNS",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon RDS は フルマネージドなリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 177,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 178,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 179,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 180,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 181,
+    "question": "高いパフォーマンスと可用性を持つリレーショナルデータベースを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS KMS",
+      "Amazon Aurora",
+      "Amazon VPC",
+      "Amazon RDS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Aurora は 高いパフォーマンスと可用性を持つリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 182,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 183,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 184,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 185,
+    "question": "次の AWS サービスのうち、オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスはどれですか？",
+    "options": [
+      "Amazon Route 53",
+      "Amazon S3",
+      "AWS Direct Connect",
+      "AWS WAF"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 186,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 187,
+    "question": "グローバル CDN としてコンテンツを高速配信するAWS サービスはどれですか？",
+    "options": [
+      "Amazon RDS",
+      "Amazon CloudFront",
+      "Amazon S3",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 188,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 189,
+    "question": "イベント駆動型のサーバーレスコンピューティングを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS Lambda",
+      "Amazon EBS",
+      "AWS CloudTrail"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 190,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 191,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 192,
+    "question": "マネージドキー管理サービスを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS KMS",
+      "AWS CloudTrail",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 193,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 194,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 195,
+    "question": "イベント駆動型のサーバーレスコンピューティングを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon EBS",
+      "AWS WAF",
+      "AWS Lambda",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 196,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 197,
+    "question": "どの AWS サービスがフルマネージドな NFS 互換のファイルシステムを提供する提供しますか？",
+    "options": [
+      "Amazon VPC",
+      "Amazon EBS",
+      "AWS KMS",
+      "Amazon EFS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 198,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 199,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 200,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 201,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 202,
+    "question": "メッセージング／通知サービスを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS KMS",
+      "Amazon CloudFront",
+      "AWS Cost Explorer",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon SNS は メッセージング／通知サービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 203,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 204,
+    "question": "次の AWS サービスのうち、オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスはどれですか？",
+    "options": [
+      "AWS Config",
+      "Amazon SNS",
+      "Amazon S3",
+      "Amazon Route 53"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 205,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 206,
+    "question": "どの AWS サービスがアクセス管理と認証を提供する提供しますか？",
+    "options": [
+      "Amazon SNS",
+      "AWS IAM",
+      "AWS Trusted Advisor",
+      "AWS KMS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS IAM は アクセス管理と認証を提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 207,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 208,
+    "question": "どの AWS サービスがAWS アカウントの API コールを記録し監査ログを提供する提供しますか？",
+    "options": [
+      "AWS Trusted Advisor",
+      "Amazon CloudFront",
+      "AWS CloudTrail",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 209,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 210,
+    "question": "アクセス管理と認証を提供するAWS サービスはどれですか？",
+    "options": [
+      "Elastic Load Balancing",
+      "AWS Trusted Advisor",
+      "AWS IAM",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS IAM は アクセス管理と認証を提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 211,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 212,
+    "question": "どの AWS サービスが受信したアプリケーショントラフィックを複数のターゲットに分散する提供しますか？",
+    "options": [
+      "AWS WAF",
+      "Elastic Load Balancing",
+      "Amazon Route 53",
+      "Amazon Aurora"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Elastic Load Balancing は 受信したアプリケーショントラフィックを複数のターゲットに分散するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 213,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 214,
+    "question": "次の AWS サービスのうち、仮想サーバーをクラウドで提供するサービスはどれですか？",
+    "options": [
+      "AWS KMS",
+      "Amazon EC2",
+      "AWS Cost Explorer",
+      "AWS Config"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 215,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 216,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 217,
+    "question": "次の AWS サービスのうち、イベント駆動型のサーバーレスコンピューティングを提供するサービスはどれですか？",
+    "options": [
+      "Amazon EFS",
+      "Amazon DynamoDB",
+      "AWS Lambda",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 218,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 219,
+    "question": "次の AWS サービスのうち、AWS アカウントの API コールを記録し監査ログを提供するサービスはどれですか？",
+    "options": [
+      "AWS Lambda",
+      "Amazon CloudFront",
+      "AWS KMS",
+      "AWS CloudTrail"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 220,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 221,
+    "question": "ウェブアプリケーションファイアウォールとして HTTP/HTTPS トラフィックを保護するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon Redshift",
+      "Amazon EBS",
+      "AWS CloudTrail",
+      "AWS WAF"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS WAF は ウェブアプリケーションファイアウォールとして HTTP/HTTPS トラフィックを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 222,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 223,
+    "question": "次の AWS サービスのうち、コストの可視化と分析を行うサービスはどれですか？",
+    "options": [
+      "Amazon VPC",
+      "Amazon Route 53",
+      "AWS Cost Explorer",
+      "Elastic Load Balancing"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Cost Explorer は コストの可視化と分析を行うサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 224,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 225,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 226,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 227,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 228,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 229,
+    "question": "どの AWS サービスがコストおよび使用量の予算を設定しアラートを送る提供しますか？",
+    "options": [
+      "Amazon Route 53",
+      "AWS Cost Explorer",
+      "AWS WAF",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Budgets は コストおよび使用量の予算を設定しアラートを送るサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 230,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 231,
+    "question": "仮想サーバーをクラウドで提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Shield",
+      "Amazon EC2",
+      "AWS Trusted Advisor",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 232,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 233,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 234,
+    "question": "仮想ネットワークをプロビジョニングし制御するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon Route 53",
+      "Amazon Aurora",
+      "AWS KMS",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 235,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 236,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 237,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 238,
+    "question": "どの AWS サービスがDNS ウェブサービスとしてドメイン名を管理しルーティングを行う提供しますか？",
+    "options": [
+      "Amazon Route 53",
+      "Amazon SNS",
+      "AWS IAM",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Route 53 は DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 239,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 240,
+    "question": "仮想サーバーをクラウドで提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS IAM",
+      "AWS WAF",
+      "Amazon VPC",
+      "Amazon EC2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 241,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 242,
+    "question": "どの AWS サービスが受信したアプリケーショントラフィックを複数のターゲットに分散する提供しますか？",
+    "options": [
+      "AWS KMS",
+      "Amazon RDS",
+      "AWS Config",
+      "Elastic Load Balancing"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Elastic Load Balancing は 受信したアプリケーショントラフィックを複数のターゲットに分散するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 243,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 244,
+    "question": "オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon S3",
+      "Elastic Load Balancing",
+      "AWS Config",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 245,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 246,
+    "question": "次の AWS サービスのうち、グローバル CDN としてコンテンツを高速配信するサービスはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 247,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 248,
+    "question": "どの AWS サービスがコストおよび使用量の予算を設定しアラートを送る提供しますか？",
+    "options": [
+      "Amazon EBS",
+      "Amazon SNS",
+      "Amazon CloudFront",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Budgets は コストおよび使用量の予算を設定しアラートを送るサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 249,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 250,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 251,
+    "question": "どの AWS サービスがAWS アカウントの API コールを記録し監査ログを提供する提供しますか？",
+    "options": [
+      "Amazon Redshift",
+      "Amazon EFS",
+      "AWS CloudTrail",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 252,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 253,
+    "question": "AWS リソースの設定変更を記録しコンプライアンスを評価するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon EBS",
+      "AWS Config",
+      "Elastic Load Balancing",
+      "AWS Shield"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 254,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 255,
+    "question": "ベストプラクティスに基づくリソース最適化の推奨を提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon EC2",
+      "AWS Config",
+      "AWS Cost Explorer",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Trusted Advisor は ベストプラクティスに基づくリソース最適化の推奨を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 256,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 257,
+    "question": "オンプレミスと AWS を専用線で接続するAWS サービスはどれですか？",
+    "options": [
+      "AWS Direct Connect",
+      "Amazon EC2",
+      "Amazon EBS",
+      "Amazon RDS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 258,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 259,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 260,
+    "question": "どの AWS サービスがブロックストレージを提供し EC2 に接続できる提供しますか？",
+    "options": [
+      "Amazon VPC",
+      "AWS Config",
+      "AWS Cost Explorer",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EBS は ブロックストレージを提供し EC2 に接続できるサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 261,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 262,
+    "question": "オンプレミスと AWS を専用線で接続するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon VPC",
+      "AWS Config",
+      "AWS Cost Explorer",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 263,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 264,
+    "question": "フルマネージドな NoSQL データベースを提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon DynamoDB",
+      "AWS Direct Connect",
+      "AWS Config",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon DynamoDB は フルマネージドな NoSQL データベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 265,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 266,
+    "question": "次の AWS サービスのうち、イベント駆動型のサーバーレスコンピューティングを提供するサービスはどれですか？",
+    "options": [
+      "Elastic Load Balancing",
+      "AWS Lambda",
+      "Amazon EBS",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 267,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 268,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 269,
+    "question": "オンプレミスと AWS を専用線で接続するAWS サービスはどれですか？",
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon Aurora",
+      "Amazon Redshift",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 270,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 271,
+    "question": "マネージドキー管理サービスを提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon CloudFront",
+      "AWS KMS",
+      "Amazon SQS",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 272,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 273,
+    "question": "オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS KMS",
+      "Amazon S3",
+      "AWS Config",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 274,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 275,
+    "question": "どの AWS サービスがマネージドキー管理サービスを提供する提供しますか？",
+    "options": [
+      "AWS Direct Connect",
+      "AWS KMS",
+      "Amazon SNS",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 276,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 277,
+    "question": "ウェブアプリケーションファイアウォールとして HTTP/HTTPS トラフィックを保護するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Lambda",
+      "Amazon CloudFront",
+      "AWS WAF",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS WAF は ウェブアプリケーションファイアウォールとして HTTP/HTTPS トラフィックを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 278,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 279,
+    "question": "次の AWS サービスのうち、AWS アカウントの API コールを記録し監査ログを提供するサービスはどれですか？",
+    "options": [
+      "Amazon SNS",
+      "AWS CloudTrail",
+      "Amazon Route 53",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 280,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 281,
+    "question": "コストの可視化と分析を行うために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon CloudFront",
+      "AWS Cost Explorer",
+      "AWS CloudTrail",
+      "Amazon Redshift"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Cost Explorer は コストの可視化と分析を行うサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 282,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 283,
+    "question": "DNS ウェブサービスとしてドメイン名を管理しルーティングを行うAWS サービスはどれですか？",
+    "options": [
+      "Amazon Route 53",
+      "AWS Direct Connect",
+      "AWS Lambda",
+      "Amazon EC2"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Route 53 は DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 284,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 285,
+    "question": "DDoS 攻撃からアプリケーションを保護するAWS サービスはどれですか？",
+    "options": [
+      "AWS CloudTrail",
+      "AWS Config",
+      "Amazon DynamoDB",
+      "AWS Shield"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Shield は DDoS 攻撃からアプリケーションを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 286,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 287,
+    "question": "どの AWS サービスがアクセス管理と認証を提供する提供しますか？",
+    "options": [
+      "Amazon EFS",
+      "AWS IAM",
+      "Amazon Route 53",
+      "Amazon Aurora"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS IAM は アクセス管理と認証を提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 288,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 289,
+    "question": "次の AWS サービスのうち、AWS リソースの設定変更を記録しコンプライアンスを評価するサービスはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "AWS Config",
       "Amazon RDS",
       "Amazon DynamoDB"
     ],
     "correctAnswer": 1,
-    "explanation": "Amazon S3 (Simple Storage Service) is designed for 99.999999999% (11 9's) of durability and is used for object storage.",
-    "domain": "Cloud Concepts",
-    "difficulty": "easy"
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
   },
   {
-    "id": 2,
-    "question": "Which AWS service provides a virtual server in the cloud?",
+    "id": 290,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
     "options": [
-      "Amazon EC2",
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 291,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 292,
+    "question": "どの AWS サービスがコストの可視化と分析を行う提供しますか？",
+    "options": [
+      "AWS WAF",
+      "AWS Cost Explorer",
+      "AWS KMS",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Cost Explorer は コストの可視化と分析を行うサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 293,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 294,
+    "question": "どの AWS サービスがオブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供する提供しますか？",
+    "options": [
       "Amazon S3",
+      "Amazon Route 53",
+      "AWS Direct Connect",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 295,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 296,
+    "question": "AWS アカウントの API コールを記録し監査ログを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon EC2",
       "Amazon RDS",
       "AWS Lambda"
     ],
     "correctAnswer": 0,
-    "explanation": "Amazon EC2 (Elastic Compute Cloud) provides virtual servers in the AWS cloud.",
-    "domain": "Technology",
-    "difficulty": "easy"
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 0
   },
   {
-    "id": 3,
-    "question": "Which AWS pricing model allows you to pay for compute capacity by the hour with no long-term commitments?",
+    "id": 297,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
     "options": [
-      "Reserved Instances",
-      "Dedicated Hosts",
-      "On-Demand Instances",
-      "Spot Instances"
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
     ],
     "correctAnswer": 2,
-    "explanation": "On-Demand Instances allow you to pay for compute capacity by the hour with no long-term commitments.",
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
     "domain": "Billing and Pricing",
-    "difficulty": "medium"
+    "difficulty": "easy",
+    "answer": 2
   },
   {
-    "id": 4,
-    "question": "Which AWS service is used to distribute incoming application traffic across multiple targets?",
+    "id": 298,
+    "question": "イベント駆動型のサーバーレスコンピューティングを提供するAWS サービスはどれですか？",
     "options": [
-      "Amazon Route 53",
-      "AWS Direct Connect",
-      "Amazon CloudFront",
-      "Elastic Load Balancing"
+      "AWS KMS",
+      "Amazon SNS",
+      "Amazon Aurora",
+      "AWS Lambda"
     ],
     "correctAnswer": 3,
-    "explanation": "Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as EC2 instances, containers, and IP addresses.",
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
     "domain": "Technology",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "answer": 3
   },
   {
-    "id": 5,
-    "question": "Which AWS service provides a fully managed NoSQL database?",
+    "id": 299,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 300,
+    "question": "コストの可視化と分析を行うAWS サービスはどれですか？",
+    "options": [
+      "Amazon SNS",
+      "Amazon VPC",
+      "AWS Lambda",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Cost Explorer は コストの可視化と分析を行うサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 301,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 302,
+    "question": "どの AWS サービスが仮想サーバーをクラウドで提供する提供しますか？",
+    "options": [
+      "Amazon EC2",
+      "Amazon EBS",
+      "Amazon CloudFront",
+      "Amazon Route 53"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 303,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 304,
+    "question": "どの AWS サービスが仮想ネットワークをプロビジョニングし制御する提供しますか？",
+    "options": [
+      "Amazon Route 53",
+      "Amazon VPC",
+      "Amazon EC2",
+      "AWS WAF"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 305,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 306,
+    "question": "オンプレミスと AWS を専用線で接続するAWS サービスはどれですか？",
+    "options": [
+      "Amazon S3",
+      "AWS Direct Connect",
+      "Amazon Redshift",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 307,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 308,
+    "question": "マネージドキー管理サービスを提供するAWS サービスはどれですか？",
+    "options": [
+      "Elastic Load Balancing",
+      "AWS KMS",
+      "Amazon DynamoDB",
+      "AWS IAM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 309,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 310,
+    "question": "次の AWS サービスのうち、フルマネージドなデータウェアハウスを提供するサービスはどれですか？",
     "options": [
       "Amazon RDS",
-      "Amazon DynamoDB",
       "Amazon Redshift",
+      "Amazon Route 53",
+      "AWS IAM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Redshift は フルマネージドなデータウェアハウスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 311,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 312,
+    "question": "オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS WAF",
+      "Amazon S3",
+      "Amazon EC2",
+      "Amazon Route 53"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 313,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 314,
+    "question": "仮想サーバーをクラウドで提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon SQS",
+      "Amazon EC2",
+      "AWS IAM",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 315,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 316,
+    "question": "どの AWS サービスがメッセージキューイングサービスを提供する提供しますか？",
+    "options": [
+      "Amazon Redshift",
+      "AWS IAM",
+      "AWS Lambda",
+      "Amazon SQS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon SQS は メッセージキューイングサービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 317,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 318,
+    "question": "どの AWS サービスが仮想サーバーをクラウドで提供する提供しますか？",
+    "options": [
+      "Amazon EC2",
+      "Amazon S3",
+      "AWS Direct Connect",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 319,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 320,
+    "question": "次の AWS サービスのうち、オンプレミスと AWS を専用線で接続するサービスはどれですか？",
+    "options": [
+      "Amazon SQS",
+      "AWS Cost Explorer",
+      "AWS Direct Connect",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 321,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 322,
+    "question": "次の AWS サービスのうち、フルマネージドなリレーショナルデータベースを提供するサービスはどれですか？",
+    "options": [
+      "Amazon Aurora",
+      "Amazon RDS",
+      "AWS CloudTrail",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon RDS は フルマネージドなリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 323,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 324,
+    "question": "フルマネージドな NFS 互換のファイルシステムを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Lambda",
+      "AWS Direct Connect",
+      "Amazon EFS",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 325,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 326,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 327,
+    "question": "どの AWS サービスがオンプレミスと AWS を専用線で接続する提供しますか？",
+    "options": [
+      "Amazon RDS",
+      "AWS Budgets",
+      "AWS Shield",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 328,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 329,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 330,
+    "question": "どの AWS サービスがアクセス管理と認証を提供する提供しますか？",
+    "options": [
+      "AWS Budgets",
+      "AWS Lambda",
+      "AWS IAM",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS IAM は アクセス管理と認証を提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 331,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 332,
+    "question": "どの AWS サービスが仮想サーバーをクラウドで提供する提供しますか？",
+    "options": [
+      "AWS Config",
+      "Amazon EC2",
+      "AWS WAF",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 333,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 334,
+    "question": "オンプレミスと AWS を専用線で接続するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Direct Connect",
+      "AWS Lambda",
+      "Amazon CloudFront",
+      "AWS Shield"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 335,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 336,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 337,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 338,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 339,
+    "question": "メッセージング／通知サービスを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Config",
+      "Amazon Aurora",
+      "Amazon SNS",
+      "AWS Shield"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon SNS は メッセージング／通知サービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 340,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 341,
+    "question": "次の AWS サービスのうち、フルマネージドなデータウェアハウスを提供するサービスはどれですか？",
+    "options": [
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon Aurora",
+      "Amazon EC2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Redshift は フルマネージドなデータウェアハウスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 342,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 343,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 344,
+    "question": "どの AWS サービスがイベント駆動型のサーバーレスコンピューティングを提供する提供しますか？",
+    "options": [
+      "Amazon SQS",
+      "Amazon RDS",
+      "AWS Config",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 345,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 346,
+    "question": "グローバル CDN としてコンテンツを高速配信するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon S3",
+      "Amazon VPC",
+      "Amazon CloudFront",
+      "Amazon EC2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 347,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 348,
+    "question": "どの AWS サービスがベストプラクティスに基づくリソース最適化の推奨を提供する提供しますか？",
+    "options": [
+      "AWS Trusted Advisor",
+      "AWS Lambda",
+      "AWS Config",
+      "AWS CloudTrail"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Trusted Advisor は ベストプラクティスに基づくリソース最適化の推奨を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 349,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 350,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 351,
+    "question": "仮想サーバーをクラウドで提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon S3",
+      "Amazon EBS",
+      "Amazon EC2",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 352,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 353,
+    "question": "ウェブアプリケーションファイアウォールとして HTTP/HTTPS トラフィックを保護するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon SNS",
+      "AWS WAF",
+      "AWS Lambda",
+      "AWS CloudTrail"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS WAF は ウェブアプリケーションファイアウォールとして HTTP/HTTPS トラフィックを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 354,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 355,
+    "question": "どの AWS サービスがメッセージキューイングサービスを提供する提供しますか？",
+    "options": [
+      "Amazon DynamoDB",
+      "AWS Lambda",
+      "Amazon SQS",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon SQS は メッセージキューイングサービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 356,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 357,
+    "question": "フルマネージドな NoSQL データベースを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Shield",
+      "AWS Config",
+      "Amazon DynamoDB",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon DynamoDB は フルマネージドな NoSQL データベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 358,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 359,
+    "question": "次の AWS サービスのうち、フルマネージドな NFS 互換のファイルシステムを提供するサービスはどれですか？",
+    "options": [
+      "Elastic Load Balancing",
+      "AWS IAM",
+      "Amazon EFS",
+      "AWS Shield"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 360,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 361,
+    "question": "イベント駆動型のサーバーレスコンピューティングを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS Lambda",
+      "AWS CloudTrail",
+      "Elastic Load Balancing",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 362,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 363,
+    "question": "ベストプラクティスに基づくリソース最適化の推奨を提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon SQS",
+      "AWS KMS",
+      "AWS Trusted Advisor",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Trusted Advisor は ベストプラクティスに基づくリソース最適化の推奨を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 364,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 365,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 366,
+    "question": "次の AWS サービスのうち、フルマネージドな NFS 互換のファイルシステムを提供するサービスはどれですか？",
+    "options": [
+      "Amazon EFS",
+      "Amazon EC2",
+      "Amazon SQS",
+      "AWS CloudTrail"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 367,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 368,
+    "question": "次の AWS サービスのうち、仮想ネットワークをプロビジョニングし制御するサービスはどれですか？",
+    "options": [
+      "Amazon EFS",
+      "Amazon Redshift",
+      "AWS WAF",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 369,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 370,
+    "question": "マネージドキー管理サービスを提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "AWS KMS",
+      "AWS Config",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 371,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 372,
+    "question": "次の AWS サービスのうち、AWS リソースの設定変更を記録しコンプライアンスを評価するサービスはどれですか？",
+    "options": [
+      "Amazon Aurora",
+      "AWS Direct Connect",
+      "AWS Config",
+      "AWS IAM"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 373,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 374,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 375,
+    "question": "どの AWS サービスが仮想ネットワークをプロビジョニングし制御する提供しますか？",
+    "options": [
+      "Amazon DynamoDB",
+      "AWS Lambda",
+      "AWS Config",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 376,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 377,
+    "question": "オンプレミスと AWS を専用線で接続するAWS サービスはどれですか？",
+    "options": [
+      "AWS Config",
+      "AWS KMS",
+      "AWS Direct Connect",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 378,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 379,
+    "question": "コストおよび使用量の予算を設定しアラートを送るために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Budgets",
+      "AWS Cost Explorer",
+      "Amazon Redshift",
+      "Amazon RDS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Budgets は コストおよび使用量の予算を設定しアラートを送るサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 380,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 381,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 382,
+    "question": "次の AWS サービスのうち、DDoS 攻撃からアプリケーションを保護するサービスはどれですか？",
+    "options": [
+      "AWS WAF",
+      "Amazon Aurora",
+      "AWS Shield",
+      "AWS CloudTrail"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Shield は DDoS 攻撃からアプリケーションを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 383,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 384,
+    "question": "グローバル CDN としてコンテンツを高速配信するAWS サービスはどれですか？",
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon CloudFront",
+      "AWS Config",
+      "Amazon RDS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 385,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 386,
+    "question": "AWS リソースの設定変更を記録しコンプライアンスを評価するAWS サービスはどれですか？",
+    "options": [
+      "AWS Config",
+      "Amazon RDS",
+      "Amazon VPC",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 387,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 388,
+    "question": "次の AWS サービスのうち、メッセージキューイングサービスを提供するサービスはどれですか？",
+    "options": [
+      "Amazon SNS",
+      "AWS Budgets",
+      "Amazon SQS",
+      "AWS Shield"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon SQS は メッセージキューイングサービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 389,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 390,
+    "question": "メッセージキューイングサービスを提供するAWS サービスはどれですか？",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon CloudFront",
+      "AWS KMS",
+      "Amazon SQS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon SQS は メッセージキューイングサービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 391,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 392,
+    "question": "マネージドキー管理サービスを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS CloudTrail",
+      "AWS WAF",
+      "Amazon SQS",
+      "AWS KMS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 393,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 394,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 395,
+    "question": "次の AWS サービスのうち、フルマネージドな NFS 互換のファイルシステムを提供するサービスはどれですか？",
+    "options": [
+      "Amazon EFS",
+      "AWS CloudTrail",
+      "Amazon DynamoDB",
+      "Amazon Aurora"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 396,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 397,
+    "question": "フルマネージドな NoSQL データベースを提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon S3",
+      "AWS WAF",
+      "Amazon EBS",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon DynamoDB は フルマネージドな NoSQL データベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 398,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 399,
+    "question": "DDoS 攻撃からアプリケーションを保護するAWS サービスはどれですか？",
+    "options": [
+      "AWS WAF",
+      "AWS Shield",
+      "Amazon SNS",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Shield は DDoS 攻撃からアプリケーションを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 400,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 401,
+    "question": "どの AWS サービスがコストおよび使用量の予算を設定しアラートを送る提供しますか？",
+    "options": [
+      "Amazon EC2",
+      "Amazon RDS",
+      "AWS CloudTrail",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Budgets は コストおよび使用量の予算を設定しアラートを送るサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 402,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 403,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 404,
+    "question": "アクセス管理と認証を提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS CloudTrail",
+      "AWS IAM",
+      "AWS Lambda",
+      "Amazon CloudFront"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS IAM は アクセス管理と認証を提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 405,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 406,
+    "question": "メッセージング／通知サービスを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Lambda",
+      "Amazon SNS",
+      "Amazon EFS",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon SNS は メッセージング／通知サービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 407,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 408,
+    "question": "どの AWS サービスがフルマネージドなリレーショナルデータベースを提供する提供しますか？",
+    "options": [
+      "Amazon RDS",
+      "Amazon S3",
+      "Amazon SQS",
+      "Amazon VPC"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon RDS は フルマネージドなリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 409,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 410,
+    "question": "次の AWS サービスのうち、オンプレミスと AWS を専用線で接続するサービスはどれですか？",
+    "options": [
+      "AWS Direct Connect",
+      "Amazon DynamoDB",
+      "AWS Shield",
+      "Amazon EFS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 411,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 412,
+    "question": "仮想ネットワークをプロビジョニングし制御するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Trusted Advisor",
+      "Amazon VPC",
+      "Amazon Route 53",
+      "AWS Shield"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 413,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 414,
+    "question": "次の AWS サービスのうち、グローバル CDN としてコンテンツを高速配信するサービスはどれですか？",
+    "options": [
+      "AWS Shield",
+      "Amazon CloudFront",
+      "Amazon Redshift",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 415,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 416,
+    "question": "AWS リソースの設定変更を記録しコンプライアンスを評価するAWS サービスはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "AWS Budgets",
+      "AWS Cost Explorer",
+      "AWS Config"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Config は AWS リソースの設定変更を記録しコンプライアンスを評価するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 417,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 418,
+    "question": "フルマネージドな NoSQL データベースを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Config",
+      "Amazon CloudFront",
+      "Amazon DynamoDB",
+      "Amazon EC2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon DynamoDB は フルマネージドな NoSQL データベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 2
+  },
+  {
+    "id": 419,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 420,
+    "question": "AWS アカウントの API コールを記録し監査ログを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon EFS",
+      "AWS CloudTrail",
+      "Amazon Route 53",
+      "AWS KMS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 421,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 422,
+    "question": "次の AWS サービスのうち、DDoS 攻撃からアプリケーションを保護するサービスはどれですか？",
+    "options": [
+      "AWS Shield",
+      "Amazon Route 53",
+      "AWS Config",
+      "AWS Direct Connect"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Shield は DDoS 攻撃からアプリケーションを保護するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 423,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 424,
+    "question": "コストの可視化と分析を行うために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS WAF",
+      "AWS Config",
+      "Amazon Aurora",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS Cost Explorer は コストの可視化と分析を行うサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 425,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 426,
+    "question": "どの AWS サービスがフルマネージドな NFS 互換のファイルシステムを提供する提供しますか？",
+    "options": [
+      "Amazon SNS",
+      "Amazon EFS",
+      "AWS Trusted Advisor",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 427,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 428,
+    "question": "どの AWS サービスがAWS アカウントの API コールを記録し監査ログを提供する提供しますか？",
+    "options": [
+      "AWS Lambda",
+      "AWS CloudTrail",
+      "Amazon DynamoDB",
+      "AWS Shield"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 429,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 430,
+    "question": "コストおよび使用量の予算を設定しアラートを送るために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS Budgets",
+      "Amazon Aurora",
+      "AWS Cost Explorer",
+      "Amazon SQS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Budgets は コストおよび使用量の予算を設定しアラートを送るサービスです。",
+    "domain": "Billing and Pricing",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 431,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 432,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 433,
+    "question": "フルマネージドな NFS 互換のファイルシステムを提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon RDS",
+      "Amazon VPC",
+      "Amazon S3",
+      "Amazon EFS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 434,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 435,
+    "question": "どの AWS サービスがグローバル CDN としてコンテンツを高速配信する提供しますか？",
+    "options": [
+      "Amazon SNS",
+      "Amazon CloudFront",
+      "Amazon Redshift",
+      "AWS WAF"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 436,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 437,
+    "question": "どの AWS サービスがメッセージキューイングサービスを提供する提供しますか？",
+    "options": [
+      "AWS Shield",
+      "Amazon SQS",
+      "Amazon DynamoDB",
+      "Amazon EBS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon SQS は メッセージキューイングサービスを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 1
+  },
+  {
+    "id": 438,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 439,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 440,
+    "question": "どの AWS サービスがイベント駆動型のサーバーレスコンピューティングを提供する提供しますか？",
+    "options": [
+      "AWS CloudTrail",
+      "AWS Lambda",
+      "Amazon EBS",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS Lambda は イベント駆動型のサーバーレスコンピューティングを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 441,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 442,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 443,
+    "question": "どの AWS サービスがオンプレミスと AWS を専用線で接続する提供しますか？",
+    "options": [
+      "AWS Direct Connect",
+      "AWS Shield",
+      "AWS Cost Explorer",
+      "AWS Budgets"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 444,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 445,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 446,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 447,
+    "question": "次の AWS サービスのうち、フルマネージドな NoSQL データベースを提供するサービスはどれですか？",
+    "options": [
+      "AWS Config",
+      "Amazon SNS",
+      "AWS Cost Explorer",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon DynamoDB は フルマネージドな NoSQL データベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 448,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 449,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 450,
+    "question": "どの AWS サービスがフルマネージドな NFS 互換のファイルシステムを提供する提供しますか？",
+    "options": [
+      "AWS Direct Connect",
+      "Amazon EFS",
+      "Amazon RDS",
+      "AWS KMS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 451,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 452,
+    "question": "次の AWS サービスのうち、仮想サーバーをクラウドで提供するサービスはどれですか？",
+    "options": [
+      "AWS Config",
+      "Amazon EC2",
+      "AWS IAM",
       "Amazon Aurora"
     ],
     "correctAnswer": 1,
-    "explanation": "Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability.",
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
     "domain": "Technology",
-    "difficulty": "medium"
+    "difficulty": "hard",
+    "answer": 1
+  },
+  {
+    "id": 453,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 454,
+    "question": "どの AWS サービスがグローバル CDN としてコンテンツを高速配信する提供しますか？",
+    "options": [
+      "Amazon CloudFront",
+      "AWS Config",
+      "AWS IAM",
+      "Amazon DynamoDB"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon CloudFront は グローバル CDN としてコンテンツを高速配信するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 455,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 456,
+    "question": "どの AWS サービスが仮想ネットワークをプロビジョニングし制御する提供しますか？",
+    "options": [
+      "Amazon VPC",
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "AWS IAM"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon VPC は 仮想ネットワークをプロビジョニングし制御するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 457,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 458,
+    "question": "どの AWS サービスがオンプレミスと AWS を専用線で接続する提供しますか？",
+    "options": [
+      "Amazon S3",
+      "Amazon EC2",
+      "AWS Direct Connect",
+      "AWS KMS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "AWS Direct Connect は オンプレミスと AWS を専用線で接続するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 2
+  },
+  {
+    "id": 459,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 460,
+    "question": "受信したアプリケーショントラフィックを複数のターゲットに分散するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "Amazon VPC",
+      "AWS Direct Connect",
+      "Amazon S3",
+      "Elastic Load Balancing"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Elastic Load Balancing は 受信したアプリケーショントラフィックを複数のターゲットに分散するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 461,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 462,
+    "question": "AWS アカウントの API コールを記録し監査ログを提供するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon CloudFront",
+      "AWS Budgets",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS CloudTrail は AWS アカウントの API コールを記録し監査ログを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 463,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 464,
+    "question": "仮想サーバーをクラウドで提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon EFS",
+      "Amazon SQS",
+      "Amazon EBS",
+      "Amazon EC2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 3
+  },
+  {
+    "id": 465,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 466,
+    "question": "どの AWS サービスがフルマネージドなリレーショナルデータベースを提供する提供しますか？",
+    "options": [
+      "Amazon RDS",
+      "AWS Cost Explorer",
+      "AWS Shield",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon RDS は フルマネージドなリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 467,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 468,
+    "question": "次の AWS サービスのうち、フルマネージドな NFS 互換のファイルシステムを提供するサービスはどれですか？",
+    "options": [
+      "Amazon EFS",
+      "Amazon SQS",
+      "Amazon CloudFront",
+      "AWS Config"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon EFS は フルマネージドな NFS 互換のファイルシステムを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 0
+  },
+  {
+    "id": 469,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 470,
+    "question": "次の AWS サービスのうち、フルマネージドなリレーショナルデータベースを提供するサービスはどれですか？",
+    "options": [
+      "AWS Config",
+      "Amazon SNS",
+      "Amazon EC2",
+      "Amazon RDS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon RDS は フルマネージドなリレーショナルデータベースを提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 471,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 472,
+    "question": "どの AWS サービスがマネージドキー管理サービスを提供する提供しますか？",
+    "options": [
+      "Elastic Load Balancing",
+      "Amazon EBS",
+      "Amazon Aurora",
+      "AWS KMS"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AWS KMS は マネージドキー管理サービスを提供するサービスです。",
+    "domain": "Security and Compliance",
+    "difficulty": "medium",
+    "answer": 3
+  },
+  {
+    "id": 473,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 474,
+    "question": "次の AWS サービスのうち、オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスはどれですか？",
+    "options": [
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon SNS",
+      "AWS IAM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon S3 は オブジェクトを保存し、耐久性99.999999999% (11ナイン) を提供するサービスです。",
+    "domain": "Cloud Concepts",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 475,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 476,
+    "question": "どの AWS サービスが仮想サーバーをクラウドで提供する提供しますか？",
+    "options": [
+      "AWS Direct Connect",
+      "Amazon EFS",
+      "Amazon VPC",
+      "Amazon EC2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 3
+  },
+  {
+    "id": 477,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 478,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 479,
+    "question": "仮想サーバーをクラウドで提供するAWS サービスはどれですか？",
+    "options": [
+      "Amazon EC2",
+      "AWS Config",
+      "AWS KMS",
+      "AWS WAF"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon EC2 は 仮想サーバーをクラウドで提供するサービスです。",
+    "domain": "Technology",
+    "difficulty": "hard",
+    "answer": 0
+  },
+  {
+    "id": 480,
+    "question": "5 つの柱（運用上の優秀性、セキュリティ、信頼性、パフォーマンス効率、コスト最適化）でベストプラクティスを示すフレームワークはどれですか？",
+    "options": [
+      "AWS Well-Architected Framework",
+      "共有責任モデル",
+      "AWS Cloud Adoption Framework",
+      "AWS Activate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS Well-Architected Framework はクラウド設計のベストプラクティスを 5 つの柱で整理しています。",
+    "domain": "Cloud Concepts",
+    "difficulty": "medium",
+    "answer": 0
+  },
+  {
+    "id": 481,
+    "question": "次の AWS サービスのうち、DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスはどれですか？",
+    "options": [
+      "Amazon RDS",
+      "Amazon Route 53",
+      "AWS Lambda",
+      "Amazon SNS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Route 53 は DNS ウェブサービスとしてドメイン名を管理しルーティングを行うサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 482,
+    "question": "以下の EC2 の料金モデルのうち、長期契約不要で使用した分だけ支払うものはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "専有ホスト",
+      "オンデマンドインスタンス",
+      "スポットインスタンス"
+    ],
+    "correctAnswer": 2,
+    "explanation": "オンデマンドインスタンスは従量課金制で、前払いも長期契約も不要です。",
+    "domain": "Billing and Pricing",
+    "difficulty": "easy",
+    "answer": 2
+  },
+  {
+    "id": 483,
+    "question": "受信したアプリケーショントラフィックを複数のターゲットに分散するために使用する AWS サービスはどれでしょうか？",
+    "options": [
+      "AWS IAM",
+      "Elastic Load Balancing",
+      "Amazon EC2",
+      "Amazon RDS"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Elastic Load Balancing は 受信したアプリケーショントラフィックを複数のターゲットに分散するサービスです。",
+    "domain": "Technology",
+    "difficulty": "easy",
+    "answer": 1
+  },
+  {
+    "id": 484,
+    "question": "1 年または 3 年契約を前提に EC2 コストを削減する料金モデルはどれですか？",
+    "options": [
+      "リザーブドインスタンス",
+      "オンデマンドインスタンス",
+      "スポットインスタンス",
+      "Savings Plans"
+    ],
+    "correctAnswer": 0,
+    "explanation": "リザーブドインスタンスは長期契約により割引を受けられます。",
+    "domain": "Billing and Pricing",
+    "difficulty": "medium",
+    "answer": 0
   }
 ]
