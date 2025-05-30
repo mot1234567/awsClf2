@@ -14,18 +14,20 @@ export default function StatisticsScreen() {
 
   useEffect(() => {
     if (!isLoading) {
-      const stats = Object.entries(userProgress.domainProgress).map(([domain, progress]) => {
-        const percentage = progress.total > 0 
-          ? Math.round((progress.correct / progress.total) * 100) 
-          : 0;
-        
-        return {
-          domain,
-          percentage,
-          answered: progress.answered,
-          total: progress.total
-        };
-      });
+      const stats = Object.entries(userProgress.domainProgress)
+        .filter(([domain, progress]) => progress.total > 0) // 0問の分野を除外
+        .map(([domain, progress]) => {
+          const percentage = progress.total > 0 
+            ? Math.round((progress.correct / progress.total) * 100) 
+            : 0;
+          
+          return {
+            domain,
+            percentage,
+            answered: progress.answered,
+            total: progress.total
+          };
+        });
       
       setDomainStats(stats);
     }
