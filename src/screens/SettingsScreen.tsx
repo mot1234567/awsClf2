@@ -7,7 +7,6 @@ import { useAppContext } from '../context/AppContext';
 import { RootStackParamList } from '../types';
 
 export default function SettingsScreen() {
-  const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
   const {
     settings,
     updateSettings,
@@ -140,7 +139,6 @@ export default function SettingsScreen() {
         <TouchableOpacity style={styles.linkButton}>
           <Text style={styles.linkButtonText}>プライバシーポリシー</Text>
         </TouchableOpacity>
-
         <TouchableOpacity
           style={styles.linkButton}
           onPress={() => navigation.navigate('Contact')}
