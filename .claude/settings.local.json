@@ -6,7 +6,10 @@
       "Bash(npm test)",
       "Bash(npm run lint)",
       "Bash(npx tsc:*)",
-      "Bash(npm start)"
+      "Bash(npm start)",
+      "Bash(jq:*)",
+      "Bash(python3:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }
