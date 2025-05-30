@@ -178,41 +178,45 @@ export default function QuizScreen({ navigation, route }: Props) {
   
   const loadQuestions = useCallback(() => {
     setIsLoading(true);
-    
+
     try {
       let filteredQuestions = [...sampleQuestions] as Question[];
-      
+
       if (mode === 'domain' && domainFilter) {
         filteredQuestions = filteredQuestions.filter(
           q => q.domain === DomainMap[domainFilter]
         );
       } else if (mode === 'bookmarked') {
-        filteredQuestions = filteredQuestions.filter(q => 
+        filteredQuestions = filteredQuestions.filter(q =>
           questionHistory[q.id]?.bookmarked
         );
       } else if (mode === 'incorrect') {
         filteredQuestions = filteredQuestions.filter(q => {
           const history = questionHistory[q.id];
-          return history && history.attempts > 0 && 
-                history.correctAttempts < history.attempts;
+          return (
+            history && history.attempts > 0 && history.correctAttempts < history.attempts
+          );
         });
       } else if (mode === 'single' && questionId) {
         filteredQuestions = filteredQuestions.filter(q => q.id === questionId);
       }
-      
-      if (settings.shuffleOptions) {
+
+      if (mode !== 'bookmarked' && mode !== 'incorrect' && !(mode === 'single' && questionId)) {
+        const answeredIds = Object.keys(questionHistory).map(id => Number(id));
+        const unanswered = filteredQuestions.filter(q => !answeredIds.includes(q.id));
+        if (unanswered.length > 0) {
+          filteredQuestions = unanswered;
+        }
+      }
+
+      if (settings.shuffleOptions && mode !== 'single') {
         filteredQuestions = [...filteredQuestions].sort(() => Math.random() - 0.5);
       }
 
-      if (mode === 'single') {
-        if (questionId) {
-          filteredQuestions = filteredQuestions.slice(0, 1);
-        } else {
-          filteredQuestions = filteredQuestions.slice(0, 10);
-        }
+      if (mode === 'single' && !questionId) {
+        const randomIndex = Math.floor(Math.random() * filteredQuestions.length);
+        filteredQuestions = [filteredQuestions[randomIndex]];
       } else if (mode === 'domain') {
-        filteredQuestions = filteredQuestions.slice(0, 10);
-      } else if (mode === 'full') {
         filteredQuestions = filteredQuestions.slice(0, 10);
       }
       
@@ -270,7 +274,8 @@ export default function QuizScreen({ navigation, route }: Props) {
       
       await updateQuestionHistory(
         currentQuestion.id,
-        isCorrect
+        isCorrect,
+        currentQuestion.domain
       );
     }
   };

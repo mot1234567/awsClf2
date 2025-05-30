@@ -11,8 +11,8 @@ export interface Question {
 
 export const DomainMap: Record<string, string> = {
   'cloud-concepts': 'Cloud Concepts',
-  technology: 'Technology',
-  security: 'Security and Compliance',
+  'technology': 'Technology',
+  'security': 'Security and Compliance',
   'billing-pricing': 'Billing and Pricing'
 };
 

@@ -1,17 +1,19 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Linking, Alert } from 'react-native';
+import { StyleSheet, View, Text, TextInput, TouchableOpacity, Alert, Linking } from 'react-native';
 
 export default function ContactScreen() {
   const [message, setMessage] = useState('');
 
-  const handleSend = async () => {
-    const url = `mailto:moto0605_yyy@yahoo.co.jp?subject=お問い合わせ&body=${encodeURIComponent(message)}`;
-    const supported = await Linking.canOpenURL(url);
-    if (supported) {
-      await Linking.openURL(url);
-    } else {
-      Alert.alert('メールアプリを開けませんでした');
+  const handleSubmit = () => {
+    if (message.trim().length === 0) {
+      Alert.alert('エラー', 'お問い合わせ内容を入力してください。');
+      return;
     }
+
+    const url = `mailto:moto0605_yyy@yahoo.co.jp?subject=${encodeURIComponent('お問い合わせ')}&body=${encodeURIComponent(message)}`;
+    Linking.openURL(url).catch(() => {
+      Alert.alert('エラー', 'メールアプリを開けませんでした。');
+    });
   };
 
   return (
@@ -24,7 +26,7 @@ export default function ContactScreen() {
         onChangeText={setMessage}
         placeholder="ご質問やご要望を入力してください"
       />
-      <TouchableOpacity style={styles.button} onPress={handleSend}>
+      <TouchableOpacity style={styles.button} onPress={handleSubmit}>
         <Text style={styles.buttonText}>送信</Text>
       </TouchableOpacity>
     </View>
@@ -35,29 +37,30 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
   },
   label: {
     fontSize: 16,
-    marginBottom: 10
+    marginBottom: 10,
   },
   input: {
-    height: 120,
+    height: 150,
     borderColor: '#ccc',
     borderWidth: 1,
-    borderRadius: 4,
+    borderRadius: 8,
     padding: 10,
     textAlignVertical: 'top',
-    marginBottom: 20
+    marginBottom: 20,
   },
   button: {
     backgroundColor: '#0066cc',
-    paddingVertical: 12,
-    borderRadius: 4,
-    alignItems: 'center'
+    padding: 15,
+    borderRadius: 8,
+    alignItems: 'center',
   },
   buttonText: {
     color: '#fff',
-    fontSize: 16
-  }
+    fontSize: 16,
+    fontWeight: '600',
+  },
 });

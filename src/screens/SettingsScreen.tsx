@@ -127,23 +127,12 @@ export default function SettingsScreen() {
       </View>
 
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>アプリ情報</Text>
-        
-        <View style={styles.infoRow}>
-          <Text style={styles.infoLabel}>バージョン</Text>
-          <Text style={styles.infoValue}>1.0.0</Text>
-        </View>
-        
-        <View style={styles.infoRow}>
-          <Text style={styles.infoLabel}>問題数</Text>
-          <Text style={styles.infoValue}>500問（予定）</Text>
-        </View>
-        
-        <TouchableOpacity style={styles.linkButton}>
-          <Text style={styles.linkButtonText}>プライバシーポリシー</Text>
-        </TouchableOpacity>
+        <Text style={styles.sectionTitle}>サポート</Text>
 
-        <TouchableOpacity style={styles.linkButton} onPress={handleContactPress}>
+        <TouchableOpacity
+          style={styles.linkButton}
+          onPress={() => navigation.navigate('Contact')}
+        >
           <Text style={styles.linkButtonText}>お問い合わせ</Text>
         </TouchableOpacity>
       </View>
@@ -210,20 +199,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 16,
     fontWeight: '600',
-  },
-  infoRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    paddingVertical: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: '#f0f0f0',
-  },
-  infoLabel: {
-    fontSize: 16,
-  },
-  infoValue: {
-    fontSize: 16,
-    color: '#666',
   },
   linkButton: {
     paddingVertical: 15,
