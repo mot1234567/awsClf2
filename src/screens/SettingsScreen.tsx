@@ -24,7 +24,6 @@ export default function SettingsScreen() {
     updateSettings({ shuffleOptions: !settings.shuffleOptions });
   };
 
-
   const handleResetProgress = () => {
     Alert.alert(
       '進捗をリセット',
@@ -58,6 +57,10 @@ export default function SettingsScreen() {
         },
       ],
     );
+  };
+
+  const handleContactPress = () => {
+    navigation.navigate('Contact');
   };
 
   if (isLoading) {
