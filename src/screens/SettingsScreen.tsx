@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../types';
 import { useAppContext } from '../context/AppContext';
+import { RootStackParamList } from '../types';
 
 export default function SettingsScreen() {
   const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
@@ -12,8 +13,10 @@ export default function SettingsScreen() {
     updateSettings,
     resetProgress,
     resetSettings,
-    isLoading 
+    isLoading
   } = useAppContext();
+
+  const navigation = useNavigation<StackNavigationProp<RootStackParamList>>();
 
   const handleToggleExplanation = () => {
     updateSettings({ showExplanationImmediately: !settings.showExplanationImmediately });
@@ -22,7 +25,6 @@ export default function SettingsScreen() {
   const handleToggleShuffle = () => {
     updateSettings({ shuffleOptions: !settings.shuffleOptions });
   };
-
 
   const handleResetProgress = () => {
     Alert.alert(
