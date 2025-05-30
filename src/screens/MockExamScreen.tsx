@@ -26,14 +26,9 @@ export default function MockExamScreen() {
   useEffect(() => {
     const allQuestions = [...sampleQuestions] as Question[];
     
-    const shuffledQuestions = allQuestions.sort(() => Math.random() - 0.5);
+    const shuffledQuestions = [...allQuestions].sort(() => Math.random() - 0.5);
     
-    let examQuestions: Question[] = [];
-    while (examQuestions.length < 65) {
-      examQuestions = [...examQuestions, ...shuffledQuestions];
-    }
-    
-    examQuestions = examQuestions.slice(0, 65);
+    const examQuestions = shuffledQuestions.slice(0, Math.min(65, shuffledQuestions.length));
     
     setQuestions(examQuestions);
     setAnswers(new Array(examQuestions.length).fill(null));
