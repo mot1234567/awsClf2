@@ -30,7 +30,6 @@ export default function HomeScreen({ navigation }: Props) {
     <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.title}>AWS CLF 試験対策アプリ</Text>
-        <Text style={styles.subtitle}>23歳東京在住AWSエンジニア向け</Text>
       </View>
       
       {!isLoading && (
@@ -128,10 +127,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 10,
     marginBottom: 10,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: '#666',
   },
   progressCard: {
     backgroundColor: 'white',

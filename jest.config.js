@@ -1,8 +1,11 @@
 module.exports = {
   preset: 'jest-expo',
-  setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect'],
+  setupFilesAfterEnv: [
+    '@testing-library/jest-native/extend-expect',
+    'react-native-gesture-handler/jestSetup.js'
+  ],
   transformIgnorePatterns: [
-    'node_modules/(?!(jest-)?react-native|@react-native|@react-navigation|expo-.*|react-clone-referenced-element|@react-native-community|@expo|@unimodules|unimodules|sentry-expo|native-base|react-native-svg)',
+    'node_modules/(?!(jest-)?react-native|@react-native|@react-navigation|expo(?:-.*)?|react-clone-referenced-element|@react-native-community|@expo|@unimodules|unimodules|sentry-expo|native-base|react-native-svg)',
   ],
   testPathIgnorePatterns: ['/node_modules/', '/android/', '/ios/'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
