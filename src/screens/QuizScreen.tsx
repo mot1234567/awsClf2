@@ -201,6 +201,11 @@ export default function QuizScreen({ navigation, route }: Props) {
         filteredQuestions = filteredQuestions.filter(q => q.id === questionId);
       }
 
+      // シャッフルを先に適用してから、未回答問題のフィルタリングを行う
+      if (settings.shuffleOptions && mode !== 'single') {
+        filteredQuestions = [...filteredQuestions].sort(() => Math.random() - 0.5);
+      }
+      
       if (mode !== 'bookmarked' && mode !== 'incorrect' && !(mode === 'single' && questionId)) {
         const answeredIds = Object.keys(questionHistory).map(id => Number(id));
         const unanswered = filteredQuestions.filter(q => !answeredIds.includes(q.id));
@@ -209,12 +214,12 @@ export default function QuizScreen({ navigation, route }: Props) {
         }
       }
 
-      if (settings.shuffleOptions && mode !== 'single') {
-        filteredQuestions = [...filteredQuestions].sort(() => Math.random() - 0.5);
-      }
-
       if (mode === 'single' && !questionId) {
-        filteredQuestions = filteredQuestions.sort(() => Math.random() - 0.5).slice(0, 10);
+        // 一問一答の場合は先にシャッフルしてから10問選択
+        if (!settings.shuffleOptions) {
+          filteredQuestions = [...filteredQuestions].sort(() => Math.random() - 0.5);
+        }
+        filteredQuestions = filteredQuestions.slice(0, 10);
       } else if (mode === 'domain') {
         filteredQuestions = filteredQuestions.slice(0, 10);
       }
