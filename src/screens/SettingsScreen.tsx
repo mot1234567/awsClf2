@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, View, Text, Switch, TouchableOpacity, ScrollView, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { RootStackParamList } from '../types';
 import { useAppContext } from '../context/AppContext';
 import { RootStackParamList } from '../types';
 
@@ -58,6 +57,10 @@ export default function SettingsScreen() {
         },
       ],
     );
+  };
+
+  const handleContactPress = () => {
+    navigation.navigate('Contact');
   };
 
   if (isLoading) {
@@ -139,10 +142,8 @@ export default function SettingsScreen() {
         <TouchableOpacity style={styles.linkButton}>
           <Text style={styles.linkButtonText}>プライバシーポリシー</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.linkButton}
-          onPress={() => navigation.navigate('Contact')}
-        >
+
+        <TouchableOpacity style={styles.linkButton} onPress={handleContactPress}>
           <Text style={styles.linkButtonText}>お問い合わせ</Text>
         </TouchableOpacity>
       </View>

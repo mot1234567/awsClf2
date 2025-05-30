@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, Linking } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Linking, Alert } from 'react-native';
 
 export default function ContactScreen() {
   const [message, setMessage] = useState('');
 
-  const handleSend = () => {
-    const mailto = `mailto:moto0605_yyy@yahoo.co.jp?subject=${encodeURIComponent('お問い合わせ')}&body=${encodeURIComponent(message)}`;
-    Linking.openURL(mailto).catch(() => {
+  const handleSend = async () => {
+    const url = `mailto:moto0605_yyy@yahoo.co.jp?subject=お問い合わせ&body=${encodeURIComponent(message)}`;
+    const supported = await Linking.canOpenURL(url);
+    if (supported) {
+      await Linking.openURL(url);
+    } else {
       Alert.alert('メールアプリを開けませんでした');
-    });
+    }
   };
 
   return (
@@ -19,10 +22,10 @@ export default function ContactScreen() {
         multiline
         value={message}
         onChangeText={setMessage}
-        placeholder="お問い合わせ内容を入力してください"
+        placeholder="ご質問やご要望を入力してください"
       />
-      <TouchableOpacity style={styles.sendButton} onPress={handleSend}>
-        <Text style={styles.sendButtonText}>送信</Text>
+      <TouchableOpacity style={styles.button} onPress={handleSend}>
+        <Text style={styles.buttonText}>送信</Text>
       </TouchableOpacity>
     </View>
   );
@@ -31,8 +34,8 @@ export default function ContactScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    padding: 20
+    padding: 20,
+    backgroundColor: '#fff'
   },
   label: {
     fontSize: 16,
@@ -44,18 +47,17 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 4,
     padding: 10,
-    textAlignVertical: 'top'
+    textAlignVertical: 'top',
+    marginBottom: 20
   },
-  sendButton: {
-    marginTop: 20,
+  button: {
     backgroundColor: '#0066cc',
-    padding: 15,
-    borderRadius: 8,
+    paddingVertical: 12,
+    borderRadius: 4,
     alignItems: 'center'
   },
-  sendButtonText: {
-    color: 'white',
-    fontSize: 16,
-    fontWeight: '600'
+  buttonText: {
+    color: '#fff',
+    fontSize: 16
   }
 });

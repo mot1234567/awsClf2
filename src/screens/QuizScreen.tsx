@@ -200,18 +200,20 @@ export default function QuizScreen({ navigation, route }: Props) {
         filteredQuestions = filteredQuestions.filter(q => q.id === questionId);
       }
       
-      if (settings.shuffleOptions && mode !== 'single') {
+      if (settings.shuffleOptions) {
         filteredQuestions = [...filteredQuestions].sort(() => Math.random() - 0.5);
       }
 
-      if (mode === 'single' && !questionId) {
-        filteredQuestions = [...filteredQuestions]
-          .sort(() => Math.random() - 0.5)
-          .slice(0, Math.min(10, filteredQuestions.length));
+      if (mode === 'single') {
+        if (questionId) {
+          filteredQuestions = filteredQuestions.slice(0, 1);
+        } else {
+          filteredQuestions = filteredQuestions.slice(0, 10);
+        }
       } else if (mode === 'domain') {
-        filteredQuestions = [...filteredQuestions]
-          .sort(() => Math.random() - 0.5)
-          .slice(0, Math.min(10, filteredQuestions.length));
+        filteredQuestions = filteredQuestions.slice(0, 10);
+      } else if (mode === 'full') {
+        filteredQuestions = filteredQuestions.slice(0, 10);
       }
       
       if (isMounted.current) {

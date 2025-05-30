@@ -13,7 +13,7 @@ type Props = {
 const domains = [
   { id: 'cloud-concepts', name: 'クラウドの概念' },
   { id: 'technology', name: 'テクノロジー' },
-  { id: 'security', name: 'セキュリティ' },
+  { id: 'security', name: 'セキュリティとコンプライアンス' },
   { id: 'billing-pricing', name: '請求と料金' }
 ];
 
