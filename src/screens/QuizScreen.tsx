@@ -214,8 +214,7 @@ export default function QuizScreen({ navigation, route }: Props) {
       }
 
       if (mode === 'single' && !questionId) {
-        const randomIndex = Math.floor(Math.random() * filteredQuestions.length);
-        filteredQuestions = [filteredQuestions[randomIndex]];
+        filteredQuestions = filteredQuestions.sort(() => Math.random() - 0.5).slice(0, 10);
       } else if (mode === 'domain') {
         filteredQuestions = filteredQuestions.slice(0, 10);
       }

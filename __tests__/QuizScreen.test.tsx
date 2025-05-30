@@ -24,7 +24,7 @@ jest.mock('../src/context/AppContext', () => {
     const [questionHistory, setQuestionHistory] = React.useState({});
     const bookmarkQuestion = jest.fn();
     const updateQuestionHistory = jest.fn((id: number, isCorrect: boolean, domain?: string) => {
-      setQuestionHistory(prev => ({
+      setQuestionHistory((prev: Record<number, any>) => ({
         ...prev,
         [id]: {
           questionId: id,
