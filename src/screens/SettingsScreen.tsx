@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, Switch, TouchableOpacity, ScrollView, Alert } from 'react-native';
+import { StyleSheet, View, Text, Switch, TouchableOpacity, ScrollView, Alert, Linking } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { useAppContext } from '../context/AppContext';
@@ -61,6 +61,12 @@ export default function SettingsScreen() {
 
   const handleContactPress = () => {
     navigation.navigate('Contact');
+  };
+
+  const handlePrivacyPolicyPress = () => {
+    Linking.openURL('https://mot1234567.github.io/awsclf-privacy/privacy.html').catch(() => {
+      Alert.alert('エラー', 'プライバシーポリシーを開けませんでした。');
+    });
   };
 
   if (isLoading) {
@@ -134,6 +140,13 @@ export default function SettingsScreen() {
           onPress={() => navigation.navigate('Contact')}
         >
           <Text style={styles.linkButtonText}>お問い合わせ</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.linkButton}
+          onPress={handlePrivacyPolicyPress}
+        >
+          <Text style={styles.linkButtonText}>プライバシーポリシー</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
