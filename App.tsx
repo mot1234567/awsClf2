@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useState } from 'react';
-import { View } from 'react-native';
+import { View, AppState } from 'react-native';
 import Navigation from './src/navigation';
 import { AppProvider } from './src/context/AppContext';
 import { StatusBar } from 'expo-status-bar';
@@ -9,8 +9,20 @@ import * as SplashScreen from 'expo-splash-screen';
 // SplashScreenの自動非表示を防止
 SplashScreen.preventAutoHideAsync().catch(console.warn);
 
+// 即座にフォールバック用のタイマーを設定（グローバルレベル）
+setTimeout(async () => {
+  console.log('🚨 GLOBAL FALLBACK: Force hiding splash screen after 10s');
+  try {
+    await SplashScreen.hideAsync();
+    console.log('✅ Global fallback: Splash screen hidden');
+  } catch (error) {
+    console.error('❌ Global fallback failed:', error);
+  }
+}, 10000);
+
 export default function App() {
   const [appIsReady, setAppIsReady] = useState(false);
+  const [splashHidden, setSplashHidden] = useState(false);
 
   useEffect(() => {
     async function prepare() {
@@ -31,15 +43,35 @@ export default function App() {
       } finally {
         console.log('🎯 Setting app as ready');
         setAppIsReady(true);
+        
+        // 初期化完了と同時にSplashScreenを非表示
+        setTimeout(async () => {
+          try {
+            console.log('🔄 Attempting to hide splash screen');
+            await SplashScreen.hideAsync();
+            setSplashHidden(true);
+            console.log('✅ Splash screen hidden successfully');
+          } catch (error) {
+            console.error('❌ Failed to hide splash screen:', error);
+            setSplashHidden(true); // エラーでも状態更新
+          }
+        }, 100); // 少し遅延させてUIの準備を待つ
       }
     }
 
-    // フォールバック：最大5秒後には必ずSplashScreenを非表示にする
-    const fallbackTimer = setTimeout(() => {
-      console.log('⚠️ Fallback: Force hiding splash screen after 5s');
+    // フォールバック：最大3秒後には必ずSplashScreenを非表示にする
+    const fallbackTimer = setTimeout(async () => {
+      console.log('⚠️ Fallback: Force hiding splash screen after 3s');
       setAppIsReady(true);
-      SplashScreen.hideAsync().catch(console.warn);
-    }, 5000);
+      try {
+        await SplashScreen.hideAsync();
+        setSplashHidden(true);
+        console.log('✅ Fallback splash screen hidden');
+      } catch (error) {
+        console.error('❌ Fallback hide failed:', error);
+        setSplashHidden(true); // エラーでも状態更新
+      }
+    }, 3000);
 
     prepare().finally(() => {
       clearTimeout(fallbackTimer);
@@ -48,18 +80,9 @@ export default function App() {
     return () => clearTimeout(fallbackTimer);
   }, []);
 
-  const onLayoutRootView = useCallback(async () => {
-    if (appIsReady) {
-      try {
-        console.log('🔄 Attempting to hide splash screen');
-        await SplashScreen.hideAsync();
-        console.log('✅ Splash screen hidden successfully');
-      } catch (error) {
-        console.error('❌ Failed to hide splash screen:', error);
-        // エラーが発生してもUI表示は続行
-      }
-    }
-  }, [appIsReady]);
+  const onLayoutRootView = useCallback(() => {
+    console.log('📱 Main UI layout complete');
+  }, []);
 
   // アプリの準備ができるまで何も表示しない
   if (!appIsReady) {
@@ -67,7 +90,7 @@ export default function App() {
     return null;
   }
 
-  console.log('🎉 Rendering main app');
+  console.log('🎉 Rendering main app, splash hidden:', splashHidden);
   return (
     <ErrorBoundary>
       <AppProvider>
