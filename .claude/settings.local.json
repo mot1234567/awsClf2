@@ -9,7 +9,12 @@
       "Bash(npm start)",
       "Bash(jq:*)",
       "Bash(python3:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(npm install:*)",
+      "Bash(npx eas build:*)",
+      "Bash(eas build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }
